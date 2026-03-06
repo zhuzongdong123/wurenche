@@ -1,0 +1,133 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="问题描述 相机预览正常但无法正常外触发出图。 可能的原因 原因1：触发模式未打开或触发源选择错误。 原因2：触发连线错误。 解决方法 针对原因1，确认相机的触发模式是否开启，选择的触发源和使用的I/O接口是否一致。 针对原因2，确认触发信号输入以及接线是否正常。" /><meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="相机能正常预览，但外触发不出图" /><meta name="DC.Relation" scheme="URI" content="GUID-C6D0DF51-44C7-4906-B4F6-B43A4BE43EB1.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845" /><meta name="DC.Language" content="zh-CN" /><title>相机能正常预览，但外触发不出图</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">相机能正常预览，但外触发不出图</h1>
+
+    <div class="body refbody">
+        <div class="section" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-CD7FEFDA-DCEB-4459-ABFF-1855BE7AC537"><h2 class="title sectiontitle">问题描述</h2>
+            
+            <p class="p">相机预览正常但无法正常外触发出图。</p>
+
+        </div>
+
+        <div class="section" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-87A5ED40-D9A0-4FFE-B461-EE5668FBEB9C"><h2 class="title sectiontitle">可能的原因</h2>
+            
+            <ul class="ul" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__UL_AKS_2RQ_F3B">
+                <li class="li" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-8476064E-D701-4BFF-A0A9-A1E22A7C0821">
+                    <p class="p">原因1：触发模式未打开或触发源选择错误。</p>
+
+                </li>
+
+                <li class="li" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-9CB11EF1-CA1F-4459-A037-60F2580DCB1C">
+                    <p class="p">原因2：触发连线错误。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-F8C97A0F-FF70-43AA-BC62-D25F7FBF12A1"><h2 class="title sectiontitle">解决方法</h2>
+            
+            <ul class="ul" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__UL_FGX_3RQ_F3B">
+                <li class="li" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-965A6053-7966-4733-B454-E160568BD6D6">
+                    <p class="p">针对原因1，确认相机的触发模式是否开启，选择的触发源和使用的I/O接口是否一致。</p>
+
+                </li>
+
+                <li class="li" id="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845__GUID-A894433E-04CE-45C8-B935-20224FE2CBDF">
+                    <p class="p">针对原因2，确认触发信号输入以及接线是否正常。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-C6D0DF51-44C7-4906-B4F6-B43A4BE43EB1.html">常见问题</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-AB1F9AD8-6354-4B78-AA78-32C039A5745F.html">启动客户端后无法搜到U3V相机</a></span></li><li><span class="topicref"><a href="GUID-484FDAB0-EC90-47D9-BCC1-47F7B9743D35.html">启动客户端后无法搜到网口相机</a></span></li><li class="active"><span class="topicref">相机能正常预览，但外触发不出图</span></li><li><span class="topicref"><a href="GUID-B5913C6D-77FE-4762-B193-3F2F86357603.html">相机预览时画面全黑</a></span></li><li><span class="topicref"><a href="GUID-5105FB8E-017B-43AD-9940-641AC84A393E.html">使用插件算法库时参数显示异常</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

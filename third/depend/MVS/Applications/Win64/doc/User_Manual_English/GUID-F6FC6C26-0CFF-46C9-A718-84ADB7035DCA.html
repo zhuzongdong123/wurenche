@@ -1,0 +1,108 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="GigE Vision Camera Management" /><meta name="abstract" content="GigE Vision camera is the camera using GigE Vision interface standard for data transmission. After connecting GigE Vision cameras to the Software, you can perform operations such as Multicast settings, saving GenICam XML, and editing device user ID." /><meta name="description" content="GigE Vision camera is the camera using GigE Vision interface standard for data transmission. After connecting GigE Vision cameras to the Software, you can perform operations such as Multicast settings, saving GenICam XML, and editing device user ID." /><meta name="DC.Relation" scheme="URI" content="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" /><meta name="DC.Relation" scheme="URI" content="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-563302CA-5BBB-495F-A135-714B20A09C5E" /><meta name="DC.Relation" scheme="URI" content="GUID-55CD1D96-0B7E-437E-87DC-CDEBB25683C4.html" /><meta name="DC.Relation" scheme="URI" content="GUID-FDA611BA-B04A-4239-B294-29080397B98E.html" /><meta name="DC.Relation" scheme="URI" content="GUID-197B2281-A024-44B2-A251-B67630F23823.html" /><meta name="DC.Relation" scheme="URI" content="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA" /><meta name="DC.Language" content="en-US" /><title>GigE Vision Camera Management</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">GigE Vision Camera Management</h1>
+
+
+<div class="body conbody"><p class="shortdesc"> GigE Vision camera is the camera using GigE Vision interface standard for
+        data transmission. After connecting GigE Vision cameras to the Software, you can perform
+        operations such as Multicast settings, saving GenICam XML, and editing device user ID. </p>
+
+<div class="p">
+            <div class="note note" id="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA__GUID-3826C083-CC14-4AE6-8370-A06C88256CD7"><span class="notetitle">Note</span> 
+                <p class="p">GigE Vision is an interface standard for machine vision cameras. It provides a
+                    framework for transmitting high-speed video and related control data over
+                    Ethernet networks.</p>
+
+            </div>
+
+        </div>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html">Device Management</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">GigE Vision Camera Management</span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-563302CA-5BBB-495F-A135-714B20A09C5E">Add  GigE Vision Camera</a></span></li><li><span class="topicref"><a href="GUID-55CD1D96-0B7E-437E-87DC-CDEBB25683C4.html">Status of GigE Vision Camera</a></span></li><li><span class="topicref"><a href="GUID-FDA611BA-B04A-4239-B294-29080397B98E.html">Edit Camera IP Address</a></span></li><li><span class="topicref"><a href="GUID-197B2281-A024-44B2-A251-B67630F23823.html">Multicast Settings</a></span></li><li><span class="topicref"><a href="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F.html">Other Features</a></span></li></ul></li><li><span class="topicref"><a href="GUID-B8824669-331C-4835-910A-D7A7BA854C62.html#GUID-B8824669-331C-4835-910A-D7A7BA854C62">USB3 Vision Camera Management</a></span></li><li><span class="topicref"><a href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96">PCIe Device Management</a></span></li><li><span class="topicref"><a href="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6.html#GUID-46106592-475C-46BE-8EEC-D95C478EE7F6">Serial Port Device Management</a></span></li><li><span class="topicref"><a href="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D.html">GenTL Device Management</a></span></li><li><span class="topicref"><a href="GUID-1FAC464C-726A-4724-81AF-6BAC778960AC.html">Event Monitor</a></span></li><li><span class="topicref"><a href="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25.html">Add a Virtual Camera</a></span></li><li><span class="topicref"><a href="GUID-647F1CA0-8DEE-469B-B0A5-900C8B0EB64E.html">Dead Pixel Correction</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

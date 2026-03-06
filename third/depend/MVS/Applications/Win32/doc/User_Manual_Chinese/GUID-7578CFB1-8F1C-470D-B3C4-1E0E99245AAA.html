@@ -1,0 +1,144 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="导入/导出单个设备属性" /><meta name="abstract" content="客户端可通过属性区域进行导入/导出单个设备属性的操作。" /><meta name="description" content="客户端可通过属性区域进行导入/导出单个设备属性的操作。" /><meta name="DC.Relation" scheme="URI" content="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA" /><meta name="DC.Language" content="zh-CN" /><title>导入/导出单个设备属性</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">导入/导出单个设备属性</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">客户端可通过属性区域进行导入/导出单个设备属性的操作。</p>
+
+        <div class="section prereq p" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-A763DD44-610E-45CE-959B-1F8637598AA8">
+            <p class="p">客户端已连接相机或采集卡。</p>
+
+        </div>
+
+<p class="li stepsection" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-E94ED085-C817-4EA4-BC75-383AE7F0696F">
+                <div class="note note" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-3E1A2C26-F2C7-4C07-B80A-669977156987"><span class="notetitle">说明</span> 
+                    <ul class="ul" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__UL_WC2_XPR_XXB">
+                        <li class="li" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-1F2034E2-FD6B-4F35-BCC8-CE3F80B4258C">
+                            <p class="p">导出功能较为简单，通过属性区域上方的<img class="image icon" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__IMAGE_T3J_RJW_QTB" src="GUID-B1D5E107-BEC7-4A8F-BC2F-CECA98D9AD48-high.png" />操作即可。以下内容主要介绍如何导入单个设备属性。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-CC9003A8-B139-4C32-BB44-C7FF03FED056">
+                            <p class="p">本章节仅介绍导入单个设备属性的操作步骤，导入/导出多个设备属性需使用<span class="ph">MVS</span>工具集中的属性导入导出工具，操作步骤请见属性导入导出工具用户手册。</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </p><ol class="ol steps" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-2C2139B4-FAB9-4516-9BE9-600595103EE6"><li class="li step stepexpand" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-2C298241-38EE-4203-A307-105534BC5312">
+                <span class="ph cmd">点击属性区域上方的<img class="image icon" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__IMAGE_UDL_L2D_CKB" src="GUID-6C28538D-2DCC-4C78-A8DE-CBC2773F43F9-high.png" />。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-64AFA282-48E3-41A6-8A2E-5A1CFFF4603D">
+                <span class="ph cmd">选择需要导入的mfs属性文件或hcf属性文件。点击<span class="ph uicontrol">打开</span>后即可进行导入导出操作。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-0C5A4584-5A5F-4D51-B3DA-E47FE57D1E19"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__UL_LQ1_33W_QTB">
+                            <li class="li" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-83E42A5B-AAE4-4DDC-A922-F3CB86395266">
+                                <p class="p">相机属性文件为mfs文件，采集卡属性文件为hcf文件。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA__GUID-2E19DF22-21FA-4733-9C39-E1588C87D1F3">
+                                <p class="p">该功能只支持相同型号以及相同固件版本相机或采集卡属性的导入。若型号或固件版本不匹配，则导入不成功。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html">相机属性配置</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83.html">属性树</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html">常用属性</a></span></li><li><span class="topicref"><a href="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html">触发</a></span></li><li><span class="topicref"><a href="GUID-A49E183B-E790-47BB-AD38-E32914274316.html">高级属性</a></span></li><li><span class="topicref"><a href="GUID-1D27B98E-1204-4E8F-9530-FD8C3F9AE46E.html">温度窗口</a></span></li><li class="active"><span class="topicref">导入/导出单个设备属性</span></li><li><span class="topicref"><a href="GUID-334F2293-5F58-4FF6-95F2-BA8810339776.html#GUID-334F2293-5F58-4FF6-95F2-BA8810339776">文件存取</a></span></li><li><span class="topicref"><a href="GUID-20B2ED4F-3F33-43A6-9DC4-2CD80957480D.html">用户集控制</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

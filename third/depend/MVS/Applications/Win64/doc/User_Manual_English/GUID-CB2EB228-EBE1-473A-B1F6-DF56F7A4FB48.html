@@ -1,0 +1,178 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="Bandwidth Detection" /><meta name="abstract" content="The Bandwidth Detection Tool can test the actual bandwidth of connected frame grabbers, upon which you can decide if the frame grabber can satisfy application requirements." /><meta name="description" content="The Bandwidth Detection Tool can test the actual bandwidth of connected frame grabbers, upon which you can decide if the frame grabber can satisfy application requirements." /><meta name="DC.Relation" scheme="URI" content="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48" /><meta name="DC.Language" content="en-US" /><title>Bandwidth Detection</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Bandwidth Detection</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">The Bandwidth Detection Tool can test the actual bandwidth of connected
+        frame grabbers, upon which you can decide if the frame grabber can satisfy application
+        requirements.</p>
+
+<div class="section prereq p" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-12407115-7E62-40F6-8E90-5DADF783E195">
+            <p class="p">Ensure the Software successfully enumerated frame grabber to be detected.</p>
+
+            <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-E44B2052-C822-48D8-A4F4-4E8425EC2A6B"><span class="notetitle">Note</span> 
+                <p class="p">The Bandwidth Detection tool only supports some CoaXPress frame grabbers and
+                    XoFLink frame grabbers<span class="ph"> developed by
+                    Hikrobot</span>.</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-EEACD871-AA46-4452-A68E-2A0945EDEE6E"><li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-80421374-F12E-4060-A269-9D01238D72B0">
+                <span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol">Tool</span> &gt; <span class="ph uicontrol">Bandwidth Detection</span></span> to open the tool.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-F507C852-8F3B-48B4-87F3-D0975106FAB7">
+                <span class="ph cmd">Select the frame grabber, and select desired
+                    <span class="ph uicontrol">stream</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-086FF624-7B04-49F6-8C98-73485A3B61D4"><span class="notetitle">Note</span> 
+                        <p class="p">The amount of available streams is subject to frame grabber
+                            type.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-F77B8F0F-44FE-4C2D-8CE4-498F9C4668D0">
+                <span class="ph cmd">Set the size of image with <span class="keyword parmname">Parameter (Width/Height)</span>.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-956511CC-C567-4B0F-9F16-9A5913E447A5"><span class="notetitle">Note</span> 
+                        <p class="p">It is recommended to test all sizes to test the stability of
+                            the interface under different image sizes.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-8CF9551B-441B-4A77-94D9-0C65172068BC">
+                <span class="ph cmd">Click <span class="ph uicontrol">Detect</span> to test the bandwidth of selected
+                    streams.</span>
+                <div class="itemgroup stepresult">
+                    <div class="fig fignone" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__FIG_KGM_XJK_GCC">
+                        
+                        <img class="image" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__IMAGE_JSN_ZJK_GCC" src="GUID-E4E2ABF4-2B20-4111-8733-83305A80C76B-high.png" width="1000" />
+                    <span class="figcap">Figure 1 Detecting Selected Stream Bandwidth</span></div>
+
+                    <p class="p">During testing, if any of the following situation occurs, you need to examine
+                        your frame grabber and the PCIe interface.</p>
+
+                    <ul class="ul" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__UL_UMZ_CF3_KCC">
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-4165A40E-A285-4168-A9A2-5DB89D152383">
+                            <p class="p">The sum of <span class="keyword parmname">Frame
+                                    Rate/Fps</span> is significantly smaller than the
+                                theoretical frame rate: Examine the PCIe interface.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-A8B30F26-6879-4E20-B7A7-AC6D614DDFAC">
+                            <p class="p">The sum of <span class="keyword parmname">Band
+                                    Width(Max/Min/Avg)/MBps</span> is significantly smaller than
+                                the theoretical bandwidth: Examine the PCIe interface.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-47DF54D4-D1C8-4390-ABBE-2AF9B8572A66">
+                            <p class="p">If the <span class="keyword parmname">Image Number</span> does
+                                not accumulate: you need to examine the frame grabber.</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-CB2EB228-EBE1-473A-B1F6-DF56F7A4FB48__GUID-076729F1-8EE1-43A1-9B28-E279B492E2A8"><strong>Optional: </strong>
+                <span class="ph cmd">Click <span class="ph uicontrol">Stop Detect</span> to pause testing.</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-545BED7E-6E3C-4D3F-BB3F-496843D1B428.html">Tool Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-A790640B-EBFF-4A20-8C1F-DFD15D404387.html#GUID-A790640B-EBFF-4A20-8C1F-DFD15D404387">IP Configurator</a></span></li><li><span class="topicref"><a href="GUID-A65ADE40-EF56-462A-A3E0-6BD07A6BE844.html">Bandwidth Manager</a></span></li><li class="active"><span class="topicref">Bandwidth Detection</span></li><li><span class="topicref"><a href="GUID-57FE1A73-D19B-4B45-B373-CEC6465B6EF9.html">GigE Vision Action Command</a></span></li><li><span class="topicref"><a href="GUID-1947F88D-EB6E-46CD-9334-35B1A2816C74.html">NIC Configurator</a></span></li><li><span class="topicref"><a href="GUID-7BDF9728-E634-44E7-B7BB-9ADC7BBE9CA5.html">Driver Manager</a></span></li><li><span class="topicref"><a href="GUID-CC83E179-64AA-4919-B800-334B9765080A.html">View PC System Information</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

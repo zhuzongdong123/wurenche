@@ -1,0 +1,176 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="使用本地参数校正" /><meta name="abstract" content="ISPTool支持从PC导入bin文件以获取校正参数。" /><meta name="description" content="ISPTool支持从PC导入bin文件以获取校正参数。" /><meta name="DC.Relation" scheme="URI" content="GUID-76BC723D-A88C-44A5-96D6-6A3248451959.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC" /><meta name="DC.Language" content="zh-CN" /><title>使用本地参数校正</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">使用本地参数校正</h1>
+
+    
+<div class="body taskbody"><p class="shortdesc">ISPTool支持从PC导入bin文件以获取校正参数。</p>
+
+<div class="section prereq p" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-4F10F780-FD2F-4377-9357-A62BABF71E38">
+            <p class="p">校正前需完成图像导入和Pipeline配置。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-511B0FE3-8996-422E-977A-69B25474FD61"><li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-718D4618-0C7A-493B-9A33-18B3A510868F">
+                <span class="ph cmd">进入需要操作的算法模块界面。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-903B142E-C1ED-485C-863E-A4F024D22B87"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__UL_QKN_XML_YQB">
+                            <li class="li" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-E3838E73-4568-4D8C-89B3-974673F4C6A6">
+                                <p class="p">Pipeline配置完成后将自动进入第一个模块操作界面。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-EA803FE5-F676-431B-A9B7-89B527D74697">
+                                <p class="p">Pipeline中的算法模块需按照从左至右的顺序依次操作。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-981433A4-41CA-497D-8A0B-DB207FD532FF">
+                <span class="ph cmd">在图像操作区域左侧单击<span class="ph uicontrol">导入本地参数</span>，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__FIG_GTG_KBY_SWB">
+                        
+                        <img class="image" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__IMAGE_HTG_KBY_SWB" src="GUID-480A0C77-39F3-4E83-9418-7E26075F9F1B-high.png" width="2000" />
+                    <span class="figcap">图 1 导入本地参数</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-DA352566-9377-4C79-BD6F-A66362BEFAAC">
+                <span class="ph cmd">选择本地的bin文件，单击<span class="ph uicontrol">打开</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-76F78254-186E-4747-8F4F-D6EA51E013B4"><span class="notetitle">说明</span> 
+                        <p class="p">相应算法模块的bin文件需要提前使用ISPTool经过算法标定后生成。</p>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">图像操作区域左侧将显示导入的校正参数，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__FIG_JX4_VKN_YWB">
+                        
+                        <img class="image" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__IMAGE_KX4_VKN_YWB" src="GUID-A18C2A76-F6EE-45F4-9574-666AB32868A8-high.png" width="2067" />
+                    <span class="figcap">图 2 显示本地校正参数</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-81598792-3F3E-49A9-8948-215A969DC924">
+                <span class="ph cmd">单击校正参数下方的<span class="ph uicontrol">开始校正</span>，实现对图像的算法校正，如下图所示。上方为输入原图，下方为校正后的结果。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__FIG_SR1_XKN_YWB">
+                        
+                        <img class="image" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__IMAGE_TR1_XKN_YWB" src="GUID-9ADCFEA7-2125-4669-89C6-6CA818430E6A-high.png" width="2067" />
+                    <span class="figcap">图 3 本地参数校正结果</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-C5537EED-F275-4908-AF39-D52D97119254"><strong>可选操作： </strong>
+                <span class="ph cmd">单击校正后图像右上角的<img class="image icon" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__IMAGE_AT3_H5F_5QB" src="GUID-86B65EBC-C9C8-4B47-BB0C-7A904ACC03B8-high.png" />可将结果图片保存至本地。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-06D89237-CE99-406B-B5A7-E5070D0DC983">
+                <span class="ph cmd">单击界面左下方的<span class="ph uicontrol">进入下一模块</span>或<span class="ph uicontrol">配置PIPELINE</span>处的下一个算法模块，可进入下一个算法模块校正界面。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__GUID-2A7B0365-73CF-4107-85CD-CD182DAAD544"><span class="notetitle">说明</span> 
+                        <p class="p">进入下一模块后，已完成校正的模块会显示<img class="image icon" id="GUID-1F2FA99B-9E4D-4F6D-8A8F-3BC07CE4E2BC__IMAGE_FCQ_X3N_YQB" src="GUID-E7AAF106-FAF5-434F-BB0F-8A5B5DCF5564-high.png" />。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html">图像校正</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE.html">导入图像</a></span></li><li><span class="topicref"><a href="GUID-354FAA3A-DEC8-4D2A-AF10-267219F8AAFD.html">编辑图像</a></span></li><li><span class="topicref"><a href="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A.html">配置Pipeline</a></span></li><li><span class="topicref"><a href="GUID-76BC723D-A88C-44A5-96D6-6A3248451959.html">校正图像</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">使用本地参数校正</span></li><li><span class="topicref"><a href="GUID-32F68D47-57D7-44A1-9D48-7EF5DEE306F5.html">使用标定参数校正</a></span></li><li><span class="topicref"><a href="GUID-21260473-8CB4-4822-8FE6-8FF55928B863.html">使用相机参数校正</a></span></li></ul></li><li><span class="topicref"><a href="GUID-0D260488-EC88-459F-B055-EF8085517463.html">其他功能</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

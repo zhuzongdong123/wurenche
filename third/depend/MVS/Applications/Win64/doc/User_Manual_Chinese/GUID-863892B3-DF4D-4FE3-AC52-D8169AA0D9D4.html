@@ -1,0 +1,341 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="IP配置工具用于对网口相机的IP地址以及IP配置类型进行设置，可对 单相机 或 多相机 进行IP配置。 IP配置工具通过菜单栏的 工具 &gt; IP配置工具 进入，如下图所示。 图 1 IP配置工具 在上图左侧将显示当前PC上的所有网口。 选中 GigE 时，右侧显示当前所有网口能搜索到的网口相机。 选中某个网口时，右侧只显示该网口下能搜索到的网口相机。 说明 单击GigE右侧的图标 ..." /><meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="IP配置工具" /><meta name="DC.Relation" scheme="URI" content="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4" /><meta name="DC.Language" content="zh-CN" /><title>IP配置工具</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body "><div class="nested0" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4">
+    <h1 class="title topictitle1">IP配置工具</h1>
+
+<div class="body conbody">
+        <p class="p">IP配置工具用于对网口相机的IP地址以及IP配置类型进行设置，可对<a class="xref" href="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4.html#GUID-F6662841-E495-4103-963F-C47DBC76D339" title="IP配置工具可对单个网口相机进行IP配置和设备用户ID修改。">单相机</a>或<a class="xref" href="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4.html#GUID-5AADCC40-B71A-4491-A698-265937520F7B" title="IP配置工具可批量对网口相机进行IP配置。">多相机</a>进行IP配置。</p>
+
+        <p class="p">IP配置工具通过菜单栏的<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">IP配置工具</span></span>进入，如下图所示。</p>
+
+        <div class="fig fignone" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__FIG_PKB_PG3_CKB">
+            
+            <img class="image" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__IMAGE_QKB_PG3_CKB" src="GUID-4101F904-9723-42F1-9766-52DB7DA6BBB5-high.png" width="2067" />
+        <span class="figcap">图 1 IP配置工具</span></div>
+
+        <p class="p">在上图左侧将显示当前PC上的所有网口。</p>
+
+        <ul class="ul" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__GUID-ED792DB1-9686-4B00-A6CF-C8FB8B0BF211">
+            <li class="li" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__GUID-790DFAC1-EDAC-4CB4-B10C-7B49BAD16458">
+                <p class="p">选中<span class="ph uicontrol">GigE</span>时，右侧显示当前所有网口能搜索到的网口相机。</p>
+
+            </li>
+
+            <li class="li" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__GUID-F98BE876-EE08-4A03-BB67-B3B2FAED2639">
+                <p class="p">选中某个网口时，右侧只显示该网口下能搜索到的网口相机。</p>
+
+            </li>
+
+        </ul>
+
+        <div class="note note" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__GUID-65DBA983-7062-488E-92FA-505CBF55EAB5"><span class="notetitle">说明</span> 
+            <p class="p">单击GigE右侧的图标<img class="image icon" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__IMAGE_PJX_C5Z_DKB" src="GUID-21129D57-7CF9-4746-88F0-C5EFF4A4C073-high.png" />，可手动枚举网口相机。</p>
+
+        </div>
+
+        <p class="p">工具右侧显示相机的基本信息和配置状态，可通过工具右上角的<img class="image icon" id="GUID-863892B3-DF4D-4FE3-AC52-D8169AA0D9D4__IMAGE_T2X_SG3_CKB" src="GUID-95E0BD30-17CA-4516-948A-58D48FA48C14-high.png" />进行设置。</p>
+
+    </div>
+
+
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-F6662841-E495-4103-963F-C47DBC76D339">
+    <h2 class="title topictitle2">配置单相机IP</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">IP配置工具可对单个网口相机进行IP配置和设备用户ID修改。</p>
+
+        <div class="section prereq p" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-03ACBA93-DECB-401B-8D76-85E9336CA2DB">
+            <p class="p">客户端已打开IP配置工具。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-4074D2FD-AC97-4D44-91E3-E1FB2E85C141"><li class="li step stepexpand" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-8FF1ECF2-9A33-4BFA-A76F-4B6E835F5DCA">
+                <span class="ph cmd">可通过两种方法打开修改IP地址窗口。</span>
+                <ul class="ul choices" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__CHOICES_MQW_1GF_CKB">
+                    <li class="li choice" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-B7D1AE52-03E6-4109-B2AB-47358B3AB7E2">
+                        <p class="p">在工具右侧双击需要修改IP地址的相机。</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-027E5A62-9D15-45DD-B8F8-174C3F271103">
+                        <p class="p">在工具右侧勾选需要修改IP地址的相机，单击<span class="ph uicontrol">修改IP</span>。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="itemgroup stepresult">
+                    <p class="p">进入修改IP地址窗口，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__FIG_X4N_FLF_CKB">
+                        
+                        <img class="image" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__IMAGE_Y4N_FLF_CKB" src="GUID-5F98BB22-FE3B-4EB0-B6CD-CB82BD4FE615-high.png" width="1000" />
+                    <span class="figcap">图 2 修改IP地址</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-FE64107E-6346-416F-B41E-5052D5044BDC">
+                <span class="ph cmd">根据需求选择IP配置类型，可选静态IP或自动分配IP（DHCP）。</span>
+                
+<table border="1" frame="hsides" rules="rows" cellpadding="4" cellspacing="0" summary="" class="simpletable choicetable choicetableborder" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__CHOICETABLE_TR2_KTT_BHB">
+<thead><tr><th id="d18792e163-option" valign="bottom" align="left">选项</th>
+<th id="d18792e163-desc" valign="bottom" align="left">描述</th></tr></thead>
+<tbody>
+                    <tr class="strow chrow">
+                        <td valign="top" headers="d18792e163-option" id="d18792e167" class="stentry choption" width="50%"><strong>
+                            <p class="p">静态IP</p>
+
+                        </strong></td>
+
+                        <td valign="top" headers="d18792e163-desc d18792e167" class="stentry chdesc" width="50%">
+                            <p class="p">需要设置相机的IP地址、子网掩码和默认网关。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="strow chrow">
+                        <td valign="top" headers="d18792e163-option" id="d18792e182" class="stentry choption" width="50%"><strong>
+                            <p class="p">自动分配IP（DHCP）</p>
+
+                        </strong></td>
+
+                        <td valign="top" headers="d18792e163-desc d18792e182" class="stentry chdesc" width="50%">
+                            <p class="p">选择自动分配IP，则相机的IP地址与PC进行自动协商。相机出厂默认为自动分配IP。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody></table>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-97861AE7-2294-4045-8D57-DD53F9B4FDDD"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__UL_J1Q_WGF_CKB">
+                            <li class="li" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-3ACC5DBC-C49C-4961-92CE-48302D9AB09C">
+                                <p class="p">若相机设置的IP地址越界，IP地址修改失败，配置状态中会进行提示。 </p>
+
+                            </li>
+
+                            <li class="li" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-85B81C9C-ED6F-4C70-AE2D-91C93C1E3725">
+                                <p class="p">限制将相机的IP设置为D类（224~239）、E类（240~254）和首段为127及255的IP，当输入限制的IP或IP格式错误时，会导致相机无法正常访问。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-28A9EE5F-4F60-4D6D-8D45-5503D89C5B1B">
+                                <p class="p">若本地与设备均为静态IP，但不在一个网段，可通过修改设备为动态IP进行IP设置。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-038D6103-54F7-4C3E-B4F3-480AA9A7CF4F"><strong>可选操作： </strong>
+                <span class="ph cmd">设置<span class="keyword parmname">设备用户ID</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-C9A338DE-660D-49F4-849E-DBA77E39A87F">
+                <span class="ph cmd">单击<span class="ph uicontrol">确定</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-F6662841-E495-4103-963F-C47DBC76D339__GUID-F3F3DA51-C764-457F-92D8-0A84E39608A4"><span class="notetitle">说明</span> 
+                        <p class="p">若切换设备的IP配置类型，建议重启相机生效；若相机仅是静态IP类型的修改，无需重启相机。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic task nested1" xml:lang="zh-CN" lang="zh-CN" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B">
+    <h2 class="title topictitle2">配置多相机IP</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">IP配置工具可批量对网口相机进行IP配置。</p>
+
+        <div class="section prereq p" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-6D60BFB4-8C9A-4476-A0E8-6D05C631BE44">
+            <p class="p">客户端已打开IP配置工具。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-EE8058CB-FE06-45DE-8EAC-5AF6EA9A09C3"><li class="li step stepexpand" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-F9AA21BA-AAF0-48F8-83C6-30A1EB1016BF">
+                <span class="ph cmd">在工具勾选需要配置IP的多个相机</span>
+            </li>
+<li class="li step stepexpand" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-609F8932-0898-4533-8D4E-964DA4A4024E">
+                <span class="ph cmd">点击<span class="ph uicontrol">修改IP</span>进入批量修改IP地址窗口，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__FIG_IF3_KLF_CKB">
+                        
+                        <img class="image" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__IMAGE_JF3_KLF_CKB" src="GUID-3CD0283B-B812-4685-B7B0-23B0CEF8BF35-high.png" width="1000" />
+                    <span class="figcap">图 3 批量修改IP地址</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-FE64107E-6346-416F-B41E-5052D5044BDC">
+                <span class="ph cmd">根据需求选择IP配置类型，可选静态IP或自动分配IP（DHCP）。</span>
+                
+<table border="1" frame="hsides" rules="rows" cellpadding="4" cellspacing="0" summary="" class="simpletable choicetable choicetableborder" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__CHOICETABLE_TR2_KTT_BHB">
+<thead><tr><th id="d18792e306-option" valign="bottom" align="left">选项</th>
+<th id="d18792e306-desc" valign="bottom" align="left">描述</th></tr></thead>
+<tbody>
+                    <tr class="strow chrow">
+                        <td valign="top" headers="d18792e306-option" id="d18792e310" class="stentry choption" width="50%"><strong>
+                            <p class="p">静态IP</p>
+
+                        </strong></td>
+
+                        <td valign="top" headers="d18792e306-desc d18792e310" class="stentry chdesc" width="50%">
+                            <p class="p">需要设置相机的IP地址、子网掩码和默认网关。</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr class="strow chrow">
+                        <td valign="top" headers="d18792e306-option" id="d18792e325" class="stentry choption" width="50%"><strong>
+                            <p class="p">自动分配IP（DHCP）</p>
+
+                        </strong></td>
+
+                        <td valign="top" headers="d18792e306-desc d18792e325" class="stentry chdesc" width="50%">
+                            <p class="p">选择自动分配IP，则相机的IP地址与PC进行自动协商。相机出厂默认为自动分配IP。</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody></table>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-FB5C67B4-AFB3-48DC-A1CE-A016651A0DCD"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__UL_J1Q_WGF_CKB">
+                            <li class="li" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-A60FFB33-6DAC-449B-97AC-2F97C7D36A9E">
+                                <p class="p">若相机设置的IP地址越界，IP地址修改失败，配置状态中会进行提示。 </p>
+
+                            </li>
+
+                            <li class="li" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-FC0BB61B-DBE8-4E7C-B16F-6E2D49258942">
+                                <p class="p">限制将相机的IP设置为D类（224~239）、E类（240~254）和首段为127及255的IP，当输入限制的IP或IP格式错误时，会导致相机无法正常访问。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-639791B2-C1E7-44E3-AEA2-097FA5BBA5EA">
+                                <p class="p">每次最多可批量修改20个相机的IP。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-F45C5B90-1D2B-46A8-B105-51FB06668A05">
+                                <p class="p">批量修改IP地址时，不支持跨网段修改。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-3683ED6E-0907-43DA-A7C0-27C385113792">
+                <span class="ph cmd">单击<span class="ph uicontrol">确定</span>。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-5AADCC40-B71A-4491-A698-265937520F7B__GUID-8DA4EF76-3516-4669-8BF4-212D782C9E18"><span class="notetitle">说明</span> 
+                        <p class="p">若切换设备的IP配置类型，建议重启相机生效；若相机仅是静态IP类型的修改，无需重启相机。</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+</div>
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-49ADF167-5FCB-4A42-9EDD-59690BE91937.html">工具应用</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">IP配置工具</span></li><li><span class="topicref"><a href="GUID-DAECD382-D164-4086-84F1-7CB17B336B77.html">带宽管理</a></span></li><li><span class="topicref"><a href="GUID-4DF465FE-2F19-48AF-B9D0-551CE26C2B07.html">带宽检测</a></span></li><li><span class="topicref"><a href="GUID-F9CF6C52-A5BD-4EED-95DF-2D60D3E78134.html">GigE Vision动作命令</a></span></li><li><span class="topicref"><a href="GUID-B344F716-EDE9-4FAD-B9B0-AF2D7AD707C6.html">网卡配置</a></span></li><li><span class="topicref"><a href="GUID-35D10920-7AE3-496A-8AB3-74AD780EBCEE.html">驱动管理</a></span></li><li><span class="topicref"><a href="GUID-71C47620-4125-44D8-A429-8D5265F853C6.html">查看PC系统信息</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

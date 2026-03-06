@@ -1,0 +1,173 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="设置查找表" /><meta name="abstract" content="查找表是一个可供用户自定义的灰度映射表。通过LUT的设置，用户可以对感兴趣的灰度范围进行拉伸、凸显等操作。查找表可以是线性曲线，也可以是自定义映射曲线。" /><meta name="description" content="查找表是一个可供用户自定义的灰度映射表。通过LUT的设置，用户可以对感兴趣的灰度范围进行拉伸、凸显等操作。查找表可以是线性曲线，也可以是自定义映射曲线。" /><meta name="DC.Relation" scheme="URI" content="GUID-A49E183B-E790-47BB-AD38-E32914274316.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1" /><meta name="DC.Language" content="zh-CN" /><title>设置查找表</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">设置查找表</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">查找表是一个可供用户自定义的灰度映射表。通过LUT的设置，用户可以对感兴趣的灰度范围进行拉伸、凸显等操作。查找表可以是线性曲线，也可以是自定义映射曲线。</p>
+
+        <div class="section prereq p" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-ED57D979-9290-4C81-827A-5D0C7C3E9812">
+            <p class="p">确认相机为已连接但未开始采集图像的状态，且像素格式不是Bayer格式。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-E340516F-9200-49D8-8BF0-F86B5E82A918"><li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-7CC1D8CE-4DFF-442A-85CB-46E0549F09B6">
+                <span class="ph cmd">进入属性设置区域的高级属性Tab页。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-3488CAFD-4953-48F0-BA68-77E9973724EB">
+                <span class="ph cmd">找到<span class="ph uicontrol">查找表</span>参数并展开。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-28D08E1E-89E8-4BF8-9C2C-8E2707F242B6">
+                <span class="ph cmd">启用<span class="ph uicontrol">显示查找表使能</span>。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-A8186D36-C2E4-4767-BC90-98FCAEA48C47">
+                <span class="ph cmd"><span class="ph uicontrol">查找表</span>下方的图表可通过三种方法显示LUT线性关系。</span>
+                <ul class="ul choices" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__CHOICES_FYP_KSC_CKB">
+                    <li class="li choice" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-34C8CC94-FCA4-40D7-B323-2E5F01AAAEDC">
+                        <p class="p">通过<span class="keyword parmname">LUT线型</span>参数选择类型显示到图表上，分为折线、曲线、自由线和动态生成四种。</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-21F52432-5E62-40C5-A61B-4974274D18BF">
+                        <p class="p">点击<span class="keyword parmname">从相机导入</span>的<span class="ph uicontrol">执行</span>按钮，将相机的LUT数据显示到图表上。</p>
+
+                    </li>
+
+                    <li class="li choice" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-8A5B67CA-5C61-494B-8866-DC6FFF8FDC37">
+                        <p class="p">点击<span class="keyword parmname">从文件导入</span>的<span class="ph uicontrol">执行</span>按钮，将txt文件的LUT数据显示到图表上。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-F15EC434-FFFB-4598-AAB3-139E3C3E0DE5"><span class="notetitle">说明</span> 
+                        <p class="p">图表的横坐标为相机的偏移量，范围为0 ~ 1023；纵坐标为偏移量对应的值，范围为0 ~ 4095，可根据实际情况自定义设置。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-06E89098-4CB6-49CD-8A25-FA63377CA30A"><strong>可选操作： </strong>
+                <span class="ph cmd">若LUT线型选择动态生成，可通过设置<span class="ph uicontrol">LUT线型</span>参数下方出现的<span class="ph uicontrol">伽马</span>、<span class="ph uicontrol">对比度</span>和<span class="ph uicontrol">Lum</span>（luminance)参数调整图表。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-70ADB841-D90A-4BFA-BF3B-18EA22154FA4"><strong>可选操作： </strong>
+                <span class="ph cmd">若需要调整图表的数据关系，可通过鼠标在图标上直接移动。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-0D8EE357-7B62-4BDC-B778-DE8155AFD96E"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__UL_YPX_55C_CKB">
+                            <li class="li" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-E7FDEA6A-FFB6-43D1-977F-45818E235EFA">
+                                <p class="p">若图表调整错误，可通过<span class="keyword parmname">清除</span>的<span class="ph uicontrol">执行</span>恢复原数据。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-B47A3F6A-1705-4EF4-AFC8-47BF339C92D8">
+                                <p class="p">不同线型的曲线移动方式有所不同，具体请以实际为准。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-A39FE2A0-4B88-4DF9-8FE8-474671961B55"><strong>可选操作： </strong>
+                <span class="ph cmd">若需要放大或缩小图表，可通过鼠标滚轮缩放显示。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-41E7AC5B-8B59-4D29-B6AA-DF2553C64BEC">
+                <span class="ph cmd">通过<span class="keyword parmname">保存至相机</span>的<span class="ph uicontrol">执行</span>按钮将查找表相关数据保存到相机中。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-08EAB539-1237-409F-A59A-938D3F4E56F1__GUID-74672C80-41DA-443F-AE47-3F21375C43CE"><strong>可选操作： </strong>
+                <span class="ph cmd">可通过<span class="keyword parmname">导出至文件</span>的<span class="ph uicontrol">执行</span>按钮将查找表相关数据以txt格式的文件导出到PC上。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html">相机属性配置</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83.html">属性树</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html">常用属性</a></span></li><li><span class="topicref"><a href="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270.html">触发</a></span></li><li><span class="topicref"><a href="GUID-A49E183B-E790-47BB-AD38-E32914274316.html">高级属性</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-45EBD62F-A119-4547-8CA3-4FAF74BBEEA7.html">设置感兴趣区域</a></span></li><li><span class="topicref"><a href="GUID-91B3FF5B-F0C9-40E4-8A92-C918DFE8CEDD.html">设置AOI区域</a></span></li><li><span class="topicref"><a href="GUID-AF702095-28BC-4E1A-9704-5B27A93D825A.html">水印信息</a></span></li><li><span class="topicref"><a href="GUID-1613E42E-0D96-44E8-B695-AB92EBE355A4.html">设置CCM矩阵参数</a></span></li><li><span class="topicref"><a href="GUID-87877964-A342-4231-BE56-7158E955DC3E.html">其他属性</a></span></li><li class="active"><span class="topicref">设置查找表</span></li></ul></li><li><span class="topicref"><a href="GUID-1D27B98E-1204-4E8F-9530-FD8C3F9AE46E.html">温度窗口</a></span></li><li><span class="topicref"><a href="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA.html">导入/导出单个设备属性</a></span></li><li><span class="topicref"><a href="GUID-334F2293-5F58-4FF6-95F2-BA8810339776.html#GUID-334F2293-5F58-4FF6-95F2-BA8810339776">文件存取</a></span></li><li><span class="topicref"><a href="GUID-20B2ED4F-3F33-43A6-9DC4-2CD80957480D.html">用户集控制</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

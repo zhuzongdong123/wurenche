@@ -1,0 +1,153 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="问题描述 启动客户端后，刷新Camera Link接口，搜索不到Camera Link相机。 可能的原因 原因1：Camera Link相机未正常启动。 原因2：Camera Link线缆连接异常。 原因3：相机和采集卡的Camera Link接口不匹配。 原因4：采集卡驱动安装异常。 解决方法 针对原因1，通过观察Camera Link相机的LED指示灯情况判断相机供电是否正常。 ..." /><meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="启动客户端后无法搜到Camera Link相机" /><meta name="DC.Relation" scheme="URI" content="GUID-64F698FF-2F83-497F-AF1F-691CC1ECD190.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-9EE03888-107E-4E30-88DA-65AF22816D61" /><meta name="DC.Language" content="zh-CN" /><title>启动客户端后无法搜到Camera Link相机</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">启动客户端后无法搜到Camera Link相机</h1>
+
+<div class="body refbody">
+<div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-54EDCB52-B7FC-4CD2-93C2-6F4066EBE8AA"><h2 class="title sectiontitle">问题描述</h2>
+            
+            <p class="p">启动客户端后，刷新Camera Link接口，搜索不到Camera Link相机。</p>
+
+        </div>
+
+        <div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-461B7641-26F7-4399-A62D-6D3902B21FEB"><h2 class="title sectiontitle">可能的原因</h2>
+            
+            <ul class="ul" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__UL_D2D_ZLQ_F3B">
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-A715D56E-763E-4FE4-9AA4-79389F09E285">
+                    <p class="p">原因1：Camera Link相机未正常启动。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-75E3CD74-FCFB-4B20-9565-35AAFF9534C3">
+                    <p class="p">原因2：Camera Link线缆连接异常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-A38975D1-F325-49A2-A5CF-8FC4881740FD">
+                    <p class="p">原因3：相机和采集卡的Camera Link接口不匹配。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-24C31B71-0090-43AC-840A-E28FB259406E">
+                    <p class="p">原因4：采集卡驱动安装异常。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-77C81565-7799-4D0B-B0EE-224EB8846C25"><h2 class="title sectiontitle">解决方法</h2>
+            
+            <ul class="ul" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__UL_KF5_CMQ_F3B">
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-C6A438A2-5067-4D68-B6E4-7845A3E973B5">
+                    <p class="p">针对原因1，通过观察Camera Link相机的LED指示灯情况判断相机供电是否正常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-200F5982-63EE-4E55-A18F-7B049AA3151D">
+                    <p class="p">针对原因2，通过观察Camera Link采集卡的指示灯情况判断Camera Link线缆传输是否正常。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-12CA1D23-A8F4-47C6-9B39-67B1D5FA7B1E">
+                    <p class="p">针对原因3，针对确认相机和采集卡的Camera Link接口相互对应。</p>
+
+                </li>
+
+                <li class="li" id="GUID-9EE03888-107E-4E30-88DA-65AF22816D61__GUID-97172A11-9359-4F38-AF1D-0E70E32C1AEF">
+                    <p class="p">针对原因4，重装采集卡驱动。若还是不行，建议联系采集卡厂商。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-64F698FF-2F83-497F-AF1F-691CC1ECD190.html">常见问题</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-484FDAB0-EC90-47D9-BCC1-47F7B9743D35.html">启动客户端后无法搜到网口相机</a></span></li><li><span class="topicref"><a href="GUID-AB1F9AD8-6354-4B78-AA78-32C039A5745F.html">启动客户端后无法搜到U3V相机</a></span></li><li class="active"><span class="topicref">启动客户端后无法搜到Camera Link相机</span></li><li><span class="topicref"><a href="GUID-8B0099F2-2B78-4559-91B1-55F6F6DEA86A.html">启动客户端后枚举Camera Link相机报错</a></span></li><li><span class="topicref"><a href="GUID-BFD1E098-6FC2-41F4-A29E-1EF399159F9F.html">客户端连接网口相机失败</a></span></li><li><span class="topicref"><a href="GUID-81F99C10-451A-4B53-8248-DE678068575C.html">客户端连接U3V相机失败</a></span></li><li><span class="topicref"><a href="GUID-7285818F-E60F-4C24-964A-4DF6544EBC70.html">客户端连接Camera Link相机失败</a></span></li><li><span class="topicref"><a href="GUID-B5913C6D-77FE-4762-B193-3F2F86357603.html">相机预览时画面全黑</a></span></li><li><span class="topicref"><a href="GUID-B5B629A4-BE86-4C61-B3FA-4634FECCD845.html">相机能正常预览，但外触发不出图</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

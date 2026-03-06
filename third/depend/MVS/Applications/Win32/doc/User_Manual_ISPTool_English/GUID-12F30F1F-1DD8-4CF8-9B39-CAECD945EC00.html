@@ -1,0 +1,154 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Algorithm Introduction" /><meta name="abstract" content="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling." /><meta name="description" content="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling." /><meta name="DC.Relation" scheme="URI" content="GUID-50952F87-E453-4F0D-88CD-8096C764ABB7.html" /><meta name="DC.Relation" scheme="URI" content="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5.html" /><meta name="DC.Relation" scheme="URI" content="GUID-ED8344D6-4992-4264-AB48-698E7A86834F.html" /><meta name="DC.Relation" scheme="URI" content="GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551.html" /><meta name="DC.Relation" scheme="URI" content="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C.html" /><meta name="DC.Relation" scheme="URI" content="GUID-BA4CEC61-0817-4924-A2CF-F54A0EB87910.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" /><meta name="DC.Language" content="en-US" /><title>Algorithm Introduction</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Algorithm Introduction</h1>
+
+
+<div class="body conbody"><p class="shortdesc">The Software supports correcting an image by the following algorithms: lens
+        shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction
+        (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT,
+        contrast), and image scaling.</p>
+
+        <div class="note note" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__GUID-5B513D2B-6B9D-4123-910E-DDDA8A777100"><span class="notetitle">Note</span> 
+            <p class="p">The algorithms should be supported by the camera. If an algorithm is not
+                supported by a camera, there will be a blue "Sim" tag in the upper right corner of
+                the algorithm icon as is shown in the figure below.</p>
+
+        </div>
+
+        <div class="fig fignone" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__FIG_RV3_1DN_5QB">
+            
+            <img class="image" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__IMAGE_LSY_BDN_5QB" src="GUID-3D7B5E9C-DB53-4F7B-BECF-005FDA045795-high.png" width="2067" />
+        <span class="figcap">Figure 1 Pipeline Pane</span></div>
+
+        <p class="p">Some algorithms supports encrypted cameras, while some supports unencrypted cameras. See
+            the following table.</p>
+
+        
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00__TABLE_OFQ_LW2_YQB" class="table" frame="border" border="1" rules="all">
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="50%" id="d1814e45">
+                            <p class="p">Algorithms Supporting Encrypted Cameras</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="50%" id="d1814e51">
+                            <p class="p">Algorithms Supporting Unencrypted Cameras</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="50%" headers="d1814e45 ">
+                            <p class="p">DDS, CCM, CLUT, Purple Fringe, Super Palette, Noise Estimation,
+                                Denoise, SuperBinning</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="50%" headers="d1814e51 ">
+                            <p class="p">CFA, Sharpness, Contrast, LUT, LSC, </p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li class="active"><span class="topicref">Algorithm Introduction</span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-50952F87-E453-4F0D-88CD-8096C764ABB7.html">Lens Shading Correction (LSC)</a></span></li><li><span class="topicref"><a href="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5.html">Denoise</a></span></li><li><span class="topicref"><a href="GUID-ED8344D6-4992-4264-AB48-698E7A86834F.html">Bayer Interpolation</a></span></li><li><span class="topicref"><a href="GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551.html">Color Correction</a></span></li><li><span class="topicref"><a href="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C.html">Image Enhancement</a></span></li><li><span class="topicref"><a href="GUID-BA4CEC61-0817-4924-A2CF-F54A0EB87910.html">Image Scaling</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

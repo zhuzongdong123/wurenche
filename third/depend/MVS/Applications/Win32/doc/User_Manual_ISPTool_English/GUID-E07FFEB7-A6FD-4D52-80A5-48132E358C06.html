@@ -1,0 +1,246 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="Correct Image by Calibration Parameters" /><meta name="abstract" content="You can conduct the calibration manually and use the calibration results to correct the image." /><meta name="description" content="You can conduct the calibration manually and use the calibration results to correct the image." /><meta name="DC.Relation" scheme="URI" content="GUID-FFA72703-C5B0-48AE-BA81-4B57A7EB25C2.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06" /><meta name="DC.Language" content="en-US" /><title>Correct Image by Calibration Parameters</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Correct Image by Calibration Parameters</h1>
+
+
+    <div class="body taskbody"><p class="shortdesc">You can conduct the calibration manually and use the calibration results to
+        correct the image.</p>
+
+        <div class="section prereq p" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-EC81D278-AA9D-4B14-A604-4353080A36C2">
+            <p class="p">Make sure you have imported an image and configured the pipeline.</p>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__STEPS_QTG_PKT_5QB"><li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-97648541-2286-421F-8BBE-495A8E6CF3A4">
+                <span class="ph cmd">Select an algorithm in the pipeline.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-61EF2865-8B05-4897-9253-9CC2E541ABD7"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__UL_QXP_DQT_5QB">
+                            <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-2BB0985C-78FB-4526-BA62-9330641A96D5">
+                                <p class="p">You need to configure the algorithms from left to
+                                    right successively.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-13B7018D-F8EF-493A-819C-E1AA47A88E70">
+                                <p class="p">Not all algorithms support calibrating image
+                                    manually.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-FC33F9EA-333E-44B8-915E-DEE000CDC150">
+                <span class="ph cmd">Click <span class="ph uicontrol">Manually Calibrate</span> to show the Calibration
+                    Parameters pane.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_RTG_PKT_5QB">
+                        
+                        <img class="image" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_Q5W_2FP_VQB" src="GUID-E0A17113-51F2-464A-95F5-82762168F0BA-high.png" width="2067" />
+                    <span class="figcap">Figure 1 Calibration Parameters</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-8EC5770B-910E-4774-8ABF-51FB8E962F3C"><strong>Optional: </strong>
+                <span class="ph cmd">Click <span class="ph uicontrol">Import Reference Image</span> and select a reference
+                    image is needed.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F23036FC-9234-4280-905B-FABA398EADDC">
+                <span class="ph cmd">Draw ROI(s)
+                    on the
+                    images.</span>
+                
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_QK2_JFP_VQB">
+                        
+                        <img class="image" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_HS1_LFP_VQB" src="GUID-447C048E-86D1-4F5F-A9DA-F5D154F9865F-high.png" width="2067" />
+                    <span class="figcap">Figure 2 Draw ROI</span></div>
+
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-6187430B-9A5D-44F9-A055-826502190FC5"><span class="notetitle">Note</span> 
+                        <p class="p">For custom ROI, if you want to change the image's position when drawing
+                            the ROIs, you can right-click the image to cause drawing, and then drag
+                            the image to change its position. After that, you can right-click the
+                            image again to continue drawing the ROIs.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-35721055-7827-44C2-800D-0776059B782E"><strong>Optional: </strong>
+                <span class="ph cmd">Adjust the parameters according to your actual needs.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-B6B6A46B-FEA7-4A77-9821-183CA73D0DA3"><span class="notetitle">Note</span> 
+                        <p class="p">Calibration parameters vary with different algorithms. See
+                            detailed descriptions in <a class="xref" href="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html#GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00" title="The Software supports correcting an image by the following algorithms: lens shading correction (LSC), denoise, bayer interpolation (demosaic, DDS), color correction (CCM, CLUT, super palette, purple fringe correction), image enhancement (sharpness, LUT, contrast), and image scaling.">Algorithm Introduction</a>.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-C5DE8B40-D7BE-43CF-B0E1-A34EFF1B6DB8">
+                <span class="ph cmd">Click <span class="ph uicontrol">Calibrate</span> and the correction parameters will be
+                    returned on the left.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_NXJ_SFP_VQB">
+                        
+                        <img class="image" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_XRN_VFP_VQB" src="GUID-A5C789AA-74E0-4985-A485-B9EEEC9FE012-high.png" width="2067" />
+                    <span class="figcap">Figure 3 Correction
+                            Parameters</span></div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <ul class="ul" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__UL_FTS_QPW_XQB">
+                        <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F4B8EC54-7D89-4345-99B6-9CC39F8F84BF">
+                            <p class="p">The Software will generate correction parameters on the left
+                                panel.</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-EA3BF8C9-EC6A-451B-BF8D-B61C7182ACC1">
+                            <p class="p">The Software will generate several images for calibration on the left
+                                of the calibration parameters.</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-02A4C961-F7B8-4DA9-9B3A-0AA9CE487547"><strong>Optional: </strong>
+                <span class="ph cmd">Click <img class="image icon" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_OCG_YDX_XQB" src="GUID-6797FABF-1C69-4F4B-A37C-EA4B03091F1E-high.png" /> to export the calibration file
+                    to the PC.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-D763BC05-C0DE-4D92-A320-2E595A26C42B"><strong>Optional: </strong>
+                <span class="ph cmd">For DDS and denoise algorithms, click <img class="image icon" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_WFZ_FQW_XQB" src="GUID-4A5622E2-AA5A-4909-9CE2-F1B529289E80-high.png" /> to add the original image as the first image for
+                    calibration.</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-B2421BDA-F790-4C2A-A2ED-12F600EAE958"><span class="notetitle">Note</span> 
+                        <p class="p">The Software will get the images' gain values via their
+                            names. If the name format of the images for calibration is not right,
+                            you should enter their gain values. You can click <span class="ph uicontrol">Edit
+                                Gain</span> on the Calibration Parameters pane to edit the
+                            images' gain values.</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-2AC9E4D7-45E0-4C41-B0E0-6011AD32D327"><strong>Optional: </strong>
+                <span class="ph cmd">Adjust the correction parameters according to your actual needs.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-F0776373-00D0-41ED-B064-530EFB32D110">
+                <span class="ph cmd">Click <span class="ph uicontrol">Correct</span> and then you can see the original image,
+                    reference image, and corrected image altogether.</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__FIG_UTG_PKT_5QB">
+                        
+                        <img class="image" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_WVS_JHP_VQB" src="GUID-7430C52C-366E-42BF-9EE6-45DE17C6BA81-high.png" width="2067" />
+                    <span class="figcap">Figure 4 Correction
+                            Result</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-E0656F62-5F05-4E1D-8635-73BF6EFF907B"><strong>Optional: </strong>
+                <span class="ph cmd">Click <img class="image icon" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__IMAGE_QJX_XHP_VQB" src="GUID-FD95C850-650E-4702-9A9E-E5E848D6E876-high.png" /> of the corrected image to save
+                    it to the PC.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-E07FFEB7-A6FD-4D52-80A5-48132E358C06__GUID-A2E79690-1810-422F-BD87-998DBBA293FE">
+                <span class="ph cmd">Click <span class="ph uicontrol">Next</span> to move on to the next algorithm down
+                    the
+                    pipeline.</span>
+            </li>
+</ol>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-9824EEC7-A88E-4FD6-8CCC-1D73FBFFF1E6.html">Image Correction</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-E18643F9-2DE7-4F68-A3B6-47CBA707B2F2.html">Import an Image</a></span></li><li><span class="topicref"><a href="GUID-9DA9E91F-48CF-44B4-B368-66B988720CA3.html">Edit an Image</a></span></li><li><span class="topicref"><a href="GUID-2C6DCDB4-2190-4288-9E56-3A15A47285D0.html">Configure the Pipeline</a></span></li><li><span class="topicref"><a href="GUID-FFA72703-C5B0-48AE-BA81-4B57A7EB25C2.html">Correct Image</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-AF17B904-2DB0-4C3B-93C7-6D018DBFDA04.html">Correct the Image by Local Parameters</a></span></li><li><span class="topicref"><a href="GUID-CE199764-4D74-4352-A468-B1DD1945E6D3.html">Correct the Image by Camera Parameters</a></span></li><li class="active"><span class="topicref">Correct Image by Calibration Parameters</span></li><li><span class="topicref"><a href="GUID-ACF61441-5676-4146-99BF-05806BFEF4B4.html">Correct the Image by Setting Parameters Manually</a></span></li></ul></li><li><span class="topicref"><a href="GUID-BCF529E6-1BA1-4B41-BFCE-0261DD55AA8D.html">Other Functions</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

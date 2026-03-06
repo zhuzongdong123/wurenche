@@ -1,0 +1,12 @@
+var keywords=[{w:"\u5DE5\u5177\u4ECB\u7ECD",p:["p0"]},{w:"\u4E8B\u4EF6\u8BCA\u65AD",p:["p1"]},{w:"\u6CD5\u5F8B\u58F0\u660E",p:["p2"]},{w:"\u4E8B\u4EF6\u603B\u89C8",p:["p3"]},{w:"\u53D1\u7248\u8BF4\u660E",p:["p4"]},{w:"IO\u6CE2\u5F62\u76D1\u6D4B",p:["p5"]},{w:"\u7B26\u53F7\u7EA6\u5B9A",p:["p6"]},{w:"\u65E5\u5FD7\u7BA1\u7406",p:["p7"]},{w:"\u83B7\u5F97\u652F\u6301",p:["p8"]},{w:"\u524D\u8A00",p:["p9"]}];
+var ph={};
+ph["p0"]=[0];
+ph["p1"]=[1];
+ph["p2"]=[2];
+ph["p3"]=[3];
+ph["p4"]=[4];
+ph["p5"]=[5];
+ph["p6"]=[6];
+ph["p7"]=[7];
+ph["p8"]=[8];
+ph["p9"]=[9];

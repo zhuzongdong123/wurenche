@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../image/background.png</file>
+        <file>../image/icon-bumpy.png</file>
+        <file>../image/icon-bumpy-active.png</file>
+        <file>../image/icon-Engineer.png</file>
+        <file>../image/icon-Engineer-ash.png</file>
+        <file>../image/icon-event.png</file>
+        <file>../image/icon-exit.png</file>
+        <file>../image/icon-lanechange.png</file>
+        <file>../image/icon-lanechange-active.png</file>
+        <file>../image/icon-moderate.png</file>
+        <file>../image/icon-moderate-active.png</file>
+        <file>../image/icon-OpenPreview.png</file>
+        <file>../image/icon-OpenPreview-ash.png</file>
+        <file>../image/icon-Openstorage.png</file>
+        <file>../image/icon-Openstorage-ash.png</file>
+        <file>../image/icon-Schoolpile.png</file>
+        <file>../image/icon-stop.png</file>
+        <file>../image/icon-stop-active.png</file>
+        <file>../image/icon-Stopstorage.png</file>
+        <file>../image/icon-Stopstorage-ash.png</file>
+        <file>../image/icon-turn.png</file>
+        <file>../image/icon-turn-active.png</file>
+        <file>../style/SourceHanSansCN-Medium.otf</file>
+        <file>../style/SourceHanSansCN-Regular.otf</file>
+        <file>../image/split.png</file>
+    </qresource>
+</RCC>

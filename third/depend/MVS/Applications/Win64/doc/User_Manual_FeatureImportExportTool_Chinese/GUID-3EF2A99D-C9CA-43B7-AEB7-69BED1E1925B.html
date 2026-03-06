@@ -1,0 +1,157 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="导入/导出操作" /><meta name="abstract" content="工具可对单个相机或单个采集卡的参数进行导入或导出操作，也可对多个相机或多个采集卡的参数进行批量导入或导出。" /><meta name="description" content="工具可对单个相机或单个采集卡的参数进行导入或导出操作，也可对多个相机或多个采集卡的参数进行批量导入或导出。" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B" /><meta name="DC.Language" content="zh-CN" /><title>导入/导出操作</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD1245B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">导入/导出操作</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">工具可对单个相机或单个采集卡的参数进行导入或导出操作，也可对多个相机或多个采集卡的参数进行批量导入或导出。</p>
+
+        <div class="section prereq p" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-3D77653B-D479-4D80-A216-93E9E790E649">
+            <p class="p">需要导入或导出属性的相机或采集卡为可用状态。</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-E6B682DD-57DC-413B-8A12-5AF92C088D56"><li class="li step stepexpand" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-E8993EA5-29A2-45AE-82A7-257EDF239B6B"><strong>可选操作： </strong>
+                <span class="ph cmd">根据实际需求在工具左侧选择接口。</span>
+                <div class="itemgroup info">
+                    <p class="p">工具默认显示所有接口下枚举到的相机或采集卡。</p>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-B18BCF48-A9ED-43AC-8D4F-15C4173C868A"><strong>可选操作： </strong>
+                <span class="ph cmd">通过工具右上角的<img class="image" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__IMAGE_O5W_TT1_NXB" src="GUID-5C31D017-A9CF-4484-9F70-54C19B21970E-high.png" />设置需显示的相机或采集卡信息。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-C954466F-F527-4BA2-A56C-CDB71ADD89E3">
+                <span class="ph cmd">选择需要导入或导出属性的相机或采集卡。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-029FC952-7AB9-49F2-8321-5414DEC18A00"><span class="notetitle">说明</span> 
+                        <p class="p">可勾选一个或多个设备，相机和采集卡不支持一起导入导出。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-67B78682-94BA-4315-9131-2B273AE10742">
+                <span class="ph cmd">进行<span class="ph uicontrol">导入</span>或<span class="ph uicontrol">导出</span>操作。</span>
+                <ul class="ul choices" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__CHOICES_HZJ_BGD_CKB">
+                    <li class="li choice" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-74261FC1-6A80-4C87-86A3-4BAFCB20E881">选择<span class="ph uicontrol">导入</span>时，需要选择导入的mfs文件并<span class="ph uicontrol">打开</span>。<div class="note note" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-21038246-2533-4E03-A382-B6060563DE37"><span class="notetitle">说明</span> 
+                            <p class="p">选择多个相机或多个采集卡导入时，只有同型号设备的属性可以批量进行导入属性的操作。</p>
+
+                        </div>
+</li>
+
+                    <li class="li choice" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-147284EB-40C0-412A-BD82-70E5D61BA37C">选择<span class="ph uicontrol">导出</span>时，需要选择文件存取的路径并<span class="ph uicontrol">选择文件夹</span>。<div class="note note" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-6976DFE7-E565-44DA-A6DA-3CA4D87B5D8D"><span class="notetitle">说明</span> 
+                            <p class="p">选择多个相机或多个采集卡导出时，工具会导出每个相机或每个采集卡的属性。</p>
+
+                        </div>
+</li>
+
+                </ul>
+
+                <div class="itemgroup stepresult">
+                    <p class="p">工具开始导入/导出相机或采集卡属性，总体升级状态显示在工具上方，被选择相机或采集卡的升级状态以及其他详细信息显示在对应<span class="keyword parmname">操作状态</span>列，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__FIG_LK4_HG3_CKB">
+                        
+                        <img class="image" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__IMAGE_LH3_1VM_HCC" src="GUID-E9A6BCF5-967E-4C11-82AC-7006C02B44DD-high.png" width="2100" />
+                    <span class="figcap">图 1 导入多个相机属性</span></div>
+
+                    <div class="fig fignone" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__FIG_RJ4_5SP_DZB">
+                        
+                        <img class="image" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__IMAGE_ZYF_BVM_HCC" src="GUID-39AB02B8-03A0-43DF-8C28-D26A2C1D8BDC-high.png" width="2100" />
+                    <span class="figcap">图 2 导入多个采集卡属性</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-3EF2A99D-C9CA-43B7-AEB7-69BED1E1925B__GUID-D341DF95-B6FB-475A-A48E-31C2BC8DD530"><strong>可选操作： </strong>
+                <span class="ph cmd">点击<span class="ph uicontrol">返回</span>可退出工具总体情况的显示。</span>
+            </li>
+</ol>
+
+</div>
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

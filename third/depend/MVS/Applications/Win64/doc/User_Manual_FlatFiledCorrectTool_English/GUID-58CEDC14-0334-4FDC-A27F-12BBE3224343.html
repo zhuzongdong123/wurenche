@@ -1,0 +1,182 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="Correction Operations" /><meta name="abstract" content="The flat field correction tool (hereinafter referred to as &#34;Tool&#34;) can get the images before and after the FPN/PRNU calibration, and display the grayscale line of the image before and after the calibration." /><meta name="description" content="The flat field correction tool (hereinafter referred to as &#34;Tool&#34;) can get the images before and after the FPN/PRNU calibration, and display the grayscale line of the image before and after the calibration." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343" /><meta name="DC.Language" content="en-US" /><title>Correction Operations</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.1.1.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD33939B" /><input hidden="hidden" id="UDTrademark" value="_HIKROBOT" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Correction Operations</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">The flat field correction tool (hereinafter referred to as
+        "Tool")
+        can get
+        the
+        images before and after the FPN/PRNU calibration, and display the
+        grayscale
+        line of the image before and after the calibration. </p>
+
+<div class="section prereq p" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-7211268F-9243-4F66-87E4-025635C2F7E2">
+            <p class="p">Connect the camera and start acquisition.</p>
+
+        </div>
+
+<ol class="ol steps" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-55007B59-E1CE-42DD-B168-757B3B0D2C9B"><li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-E3AA6DE8-DDC1-4567-943F-5A1319DD957F">
+                <span class="ph cmd">Get prepared by following the instruction below <span class="keyword parmname">Preparation for FPN Calibration</span>.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-3866CA66-B0E5-457C-9277-4CCA2521ECF6">
+                <span class="ph cmd">Click <span class="ph uicontrol">Acquire Dark Image</span> to get the image before
+                    starting the FPN calibration.</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">The grayscale graph of the image is displayed on the left side
+                        of the tool, and the execution result and time are displayed under the
+                        graph.</p>
+
+                    <div class="fig fignone" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__FIG_FSC_5R3_XXB">
+                        
+                        <img class="image" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__IMAGE_GSC_5R3_XXB" src="GUID-A4FC7CC3-1E24-4340-A809-EA0D8FC5B8DF-high.png" width="2067" />
+                    <span class="figcap">Figure 1 Acquire Dark Image</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-C3A12EEB-A69D-405B-A5B6-E167DD5E72F2">
+                <span class="ph cmd">Go back to the <span class="ph">MVS </span> and configure parameters of FPN
+                    Calibration.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-15A0243B-2E3F-4A00-85A2-11640BD31E7D">
+                <span class="ph cmd">Click <span class="ph uicontrol">Perform FPN Calibration</span> to get an image.</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">The grayscale graph of the image is displayed on the left side
+                        of the tool, and the execution result and time are displayed under the
+                        graph.</p>
+
+                    <div class="fig fignone" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__FIG_JWP_VR3_XXB">
+                        
+                        <img class="image" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__IMAGE_KWP_VR3_XXB" src="GUID-C6D80B7B-5B77-41D7-B04C-52AF32243D2F-high.png" width="2067" />
+                    <span class="figcap">Figure 2 Perform FPN Calibration</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-CF7F0B66-F000-4C4C-8D37-8CA84612DD46">
+                <span class="ph cmd">Get prepared by following the instruction below <span class="keyword parmname">Preparation for PRNU Calibration</span>.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-0629AEF2-5D89-4A40-B201-A61459640489">
+                <span class="ph cmd">Click <span class="ph uicontrol">Acquire Bright Image</span> to get the image before
+                    starting the PRNU calibration.</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">The grayscale graph of the image is displayed on the left side of
+                        the tool, and the execution result and time are displayed under the
+                        graph.</p>
+
+                    <div class="fig fignone" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__FIG_TJZ_YT3_XXB">
+                        
+                        <img class="image" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__IMAGE_UJZ_YT3_XXB" src="GUID-AA360E36-F7FF-4B66-BC95-88D239750BA5-high.png" width="2067" />
+                    <span class="figcap">Figure 3 Acquire Bright Image</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-C184A9E7-6EFE-457E-83E1-2C7B6F2913BF">
+                <span class="ph cmd">Go back to the <span class="ph">MVS </span> and configure parameters of PRNU
+                    Calibration.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__GUID-677D2D34-9BD5-42F5-9AA0-4DEEB8F056BE">
+                <span class="ph cmd">Click <span class="ph uicontrol">Perform PRNU Calibration</span> to get an image.</span>
+                <div class="itemgroup stepresult">
+                    <p class="p">The grayscale graph of the image is displayed on the left side of
+                        the tool, and the execution result and time are displayed under the
+                        graph.</p>
+
+                    <div class="fig fignone" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__FIG_JGY_153_XXB">
+                        
+                        <img class="image" id="GUID-58CEDC14-0334-4FDC-A27F-12BBE3224343__IMAGE_KGY_153_XXB" src="GUID-F096EEB3-682E-4D1F-9D28-30E9C0CFF620-high.png" width="2067" />
+                    <span class="figcap">Figure 4 Perform PRNU Calibration</span></div>
+
+                    
+                </div>
+                
+            </li>
+</ol>
+
+</div>
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

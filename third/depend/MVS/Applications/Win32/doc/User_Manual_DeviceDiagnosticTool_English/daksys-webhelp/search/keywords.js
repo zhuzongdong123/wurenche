@@ -1,0 +1,12 @@
+var keywords=[{w:"Legal",p:["p0"]},{w:"Information",p:["p0"]},{w:"IO",p:["p1"]},{w:"WaveForm",p:["p1"]},{w:"Detection",p:["p1"]},{w:"Release",p:["p2"]},{w:"Notes",p:["p2"]},{w:"Log",p:["p3"]},{w:"Management",p:["p3"]},{w:"Event",p:["p4","p7"]},{w:"Overview",p:["p4"]},{w:"Tool",p:["p5"]},{w:"Introduction",p:["p5"]},{w:"Symbol",p:["p6"]},{w:"Conventions",p:["p6"]},{w:"Diagnostic",p:["p7"]},{w:"Get",p:["p8"]},{w:"Support",p:["p8"]},{w:"Disclaimer",p:["p9"]}];
+var ph={};
+ph["p0"]=[0, 1];
+ph["p1"]=[2, 3, 4];
+ph["p2"]=[5, 6];
+ph["p3"]=[7, 8];
+ph["p4"]=[9, 10];
+ph["p5"]=[11, 12];
+ph["p6"]=[13, 14];
+ph["p7"]=[9, 15];
+ph["p8"]=[16, 17];
+ph["p9"]=[18];

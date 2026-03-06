@@ -1,0 +1,161 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="配置Pipeline" /><meta name="abstract" content="可通过本地导入、相机导入及手动设置的方法配置Pipeline。" /><meta name="description" content="可通过本地导入、相机导入及手动设置的方法配置Pipeline。" /><meta name="DC.Relation" scheme="URI" content="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A" /><meta name="DC.Language" content="zh-CN" /><title>配置Pipeline</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">配置Pipeline</h1>
+
+
+<div class="body conbody"><p class="shortdesc">可通过本地导入、相机导入及手动设置的方法配置Pipeline。</p>
+
+        <div class="note note" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-7777AD04-DFDD-41B3-AF83-69F1C66A5480"><span class="notetitle">说明</span> 
+            <ul class="ul" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__UL_VXK_K5J_VWB">
+                <li class="li" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-2C588232-48A9-424C-BEC5-146F4B5B34D0">
+                    <p class="p">配置Pipeline前需确保已连接相机或已导入本地图像。</p>
+
+                </li>
+
+                <li class="li" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-66119B70-0424-4BE2-A77C-8F33137611F3">
+                    <p class="p">Pipeline配置后将按照固定顺序进行排序，色彩校正模块的顺序为<span class="ph menucascade"><span class="ph uicontrol">白平衡</span> &gt; <span class="ph uicontrol">CCM</span> &gt; <span class="ph uicontrol">超级调色盘</span> &gt; <span class="ph uicontrol">CLUT</span> &gt; <span class="ph uicontrol">去紫边</span> &gt; <span class="ph uicontrol">Gamma</span></span>。</p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-3C35C47B-6587-4AB6-9736-C53F6E800D68"><h2 class="title sectiontitle">导入本地Pipeline</h2>
+            
+            <p class="p">单击工具控制条的<img class="image icon" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__IMAGE_KQH_H1K_VWB" src="GUID-B0CC8F03-FAF3-49EF-A6D7-ACBFCA9D120A-high.png" />，选择本地的xml配置文件，单击<span class="ph uicontrol">确定</span>即可导入。此时页面将显示导入Pipeline中包含的算法模块，如下图所示。</p>
+
+            <div class="fig fignone" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__FIG_TDG_JT3_SQB">
+                
+                <img class="image" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__IMAGE_UV3_NFN_YQB" src="GUID-508D0676-2F5C-455D-BB4E-83CA1219CB7A-high.png" width="1000" />
+            <span class="figcap">图 1 配置完成</span></div>
+
+        </div>
+
+        <div class="section" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-582589A4-0D50-434F-B71C-3B52E33479C4"><h2 class="title sectiontitle">导入相机Pipeline</h2>
+            
+            <p class="p">连接相机时，将自动清空Pipeline，需单击工具控制条下方的<span class="ph uicontrol">请点击配置Pipeline</span>进行重新配置。</p>
+
+        </div>
+
+        <div class="section" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-EEC6F372-66FF-4D1E-8C50-029275E94456"><h2 class="title sectiontitle">手动配置Pipeline</h2>
+            
+            <p class="p">单击工具控制条下方的<span class="ph uicontrol">请点击配置Pipeline</span>，在弹出界面中通过单击选择需要的算法模块使其变为橙色，对已选中的算法模块再次单击可取消选择，如下图所示。完成Pipeline配置后单击<span class="ph uicontrol">完成</span>，此时页面将显示配置的Pipeline中包含的算法模块。</p>
+
+            <div class="fig fignone" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__FIG_EFS_KYL_YWB">
+                
+                <img class="image" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__IMAGE_FFS_KYL_YWB" src="GUID-DB17C0A0-4D7B-453F-AA65-DB78B61C6DA8-high.png" width="2000" />
+            <span class="figcap">图 2 Pipeline配置界面</span></div>
+
+            <div class="note note" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-0AEDB7C4-420E-4858-BA20-C0788DDCF5EC"><span class="notetitle">说明</span> 
+                <ul class="ul" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__UL_JSP_YN3_SQB">
+                    <li class="li" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-F820880A-F15F-46DD-84C4-603944A11771">
+                        <p class="p">配置Pipeline页面中置灰的模块不可选择。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-0F309494-FEC5-486C-82F7-CFFFDF748C9B">
+                        <p class="p">连接相机状态下，当前相机不支持的算法模块会标注“仿真”。</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A__GUID-AAB58993-AC66-42CB-A30D-77FE4CC02A6C">
+                        <p class="p">若需修改当前已配置的Pipeline，可单击<span class="ph uicontrol">配置PIPELINE</span>，再次打开配置页面进行修改。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html">图像校正</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE.html">导入图像</a></span></li><li><span class="topicref"><a href="GUID-354FAA3A-DEC8-4D2A-AF10-267219F8AAFD.html">编辑图像</a></span></li><li class="active"><span class="topicref">配置Pipeline</span></li><li><span class="topicref"><a href="GUID-76BC723D-A88C-44A5-96D6-6A3248451959.html">校正图像</a></span></li><li><span class="topicref"><a href="GUID-0D260488-EC88-459F-B055-EF8085517463.html">其他功能</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

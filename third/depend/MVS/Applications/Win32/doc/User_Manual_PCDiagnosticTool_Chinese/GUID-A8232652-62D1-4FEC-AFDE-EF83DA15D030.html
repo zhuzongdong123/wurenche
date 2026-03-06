@@ -1,0 +1,178 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="诊断过程" /><meta name="abstract" content="工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即 开始诊断 &gt; 诊断结果 &gt; 诊断复查" /><meta name="description" content="工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即 开始诊断 &gt; 诊断结果 &gt; 诊断复查" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030" /><meta name="DC.Language" content="zh-CN" /><title>诊断过程</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">诊断过程</h1>
+
+
+<div class="body conbody"><p class="shortdesc">工具可对诊断结果为非正常的内容可针对性进行处理，主要分为三个阶段，即<span class="ph menucascade"><span class="ph uicontrol">开始诊断</span> &gt; <span class="ph uicontrol">诊断结果</span> &gt; <span class="ph uicontrol">诊断复查</span></span></p>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-F2F61A24-A1AB-4210-A5DD-7C1AA08A2C0B"><h2 class="title sectiontitle">开始诊断</h2>
+            
+            <p class="p">当采集卡出现异常时，通过工具可对SDK、驱动以及系统包含的内容逐个进行检测，单击<span class="ph uicontrol">开始诊断</span>，如下图所示。</p>
+
+            <div class="p">
+                <ul class="ul" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__UL_UD3_D4H_5WB">
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-F27C27EB-1840-4D10-B9FB-9F0BC2C34520">
+                        <p class="p">SDK检测：检测C:\Windows\SysWoW64和C:\Windows\System32系统路径下是否存在多余的SDK文件，以及环境变量是否正常；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-36BDEDDD-A99C-40F0-B5A3-60B7ED40C74B">
+                        <p class="p">驱动检测：检测GEV以及U3V驱动安装是否正常，查看USB3.0控制器驱动版本信息；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-D4638BD6-05B9-4777-8402-D0096F368C6D">
+                        <p class="p">系统检测：检测系统防火墙的状态以及网络线路速度，查看USB控制器、网卡巨帧以及系统的相关信息。</p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="p">
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_OZ2_2QG_5WB">
+                    
+                    <img class="image" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_E4G_J23_WWB" src="GUID-6D6E7AEC-1C3F-4E4F-8DAB-BCFFCEB74D74-high.png" width="1800" />
+                <span class="figcap">图 1 开始诊断</span></div>
+
+                <div class="note note" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-B7F3659B-72D1-4846-B212-48D440CAE3DE"><span class="notetitle">说明</span> 
+                    <p class="p">单击<span class="ph uicontrol">停止诊断</span>，即停止当前的诊断操作。</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-701FE65A-3197-462D-8760-CBE1AF3CB3A1"><h2 class="title sectiontitle">诊断结果</h2>
+            
+            <p class="p">完成诊断后，工具可对诊断内容进行判断，诊断结果如下图所示。按照严重程度由高到低可分为异常、警告、正常3种状态。</p>
+
+            <p class="p">若有需要优化的检测项，可单击相应内容的<span class="ph uicontrol"><img class="image" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_D2J_4NH_5WB" src="GUID-C96B3B76-D8AA-4E18-9B6B-45FF1FB55A34-high.png" />查看</span>或<span class="ph uicontrol"><img class="image" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_E2J_4NH_5WB" src="GUID-C96B3B76-D8AA-4E18-9B6B-45FF1FB55A34-high.png" />查看解决办法</span>等内容可进行逐一优化。</p>
+
+            <div class="p">
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_LLV_LQG_5WB">
+                    
+                    <img class="image" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_IKQ_XMH_5WB" src="GUID-8F73BD92-278F-4FA8-BD89-760CBE29A749-high.png" width="1800" />
+                <span class="figcap">图 2 诊断结果</span></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-823C8072-B3A6-446F-8F54-EC1AD8A99363"><h2 class="title sectiontitle">诊断复查</h2>
+            
+            <p class="p">处理警告和异常的信息后，工具提供对非正常状态的内容或全部内容进行诊断复查，分为<span class="ph uicontrol">优化诊断</span>和<span class="ph uicontrol">重新诊断</span>，处理异常后诊断的结果如下图所示。</p>
+
+            <div class="p">
+                <ul class="ul" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__UL_OJ1_HNH_5WB">
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-C9873FC4-53BC-423E-92AA-26ABCFFC11D1">
+                        <p class="p">优化诊断：单击<span class="ph uicontrol">优化诊断</span>，系统可对出现警告和异常状态的内容进行诊断，也可对部分优化项进行优化修复；</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__GUID-573D1566-7D16-4023-9DE0-F89FCDE72E48">
+                        <p class="p">重新诊断：单击<span class="ph uicontrol">重新诊断</span>，系统可对所有内容重新进行诊断。</p>
+
+                    </li>
+
+                </ul>
+
+                <div class="fig fignone" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__FIG_IZW_CNH_5WB">
+                    
+                    <img class="image" id="GUID-A8232652-62D1-4FEC-AFDE-EF83DA15D030__IMAGE_JZW_CNH_5WB" src="GUID-69E4C412-F781-4F68-8B8F-B2AF90C06BA4-high.png" width="1800" />
+                <span class="figcap">图 3 诊断复查</span></div>
+
+            </div>
+
+        </div>
+
+</div>
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

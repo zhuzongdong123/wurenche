@@ -1,0 +1,120 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="相机图像导入" /><meta name="abstract" content="ISPTool支持通过连接相机采集图像。" /><meta name="description" content="ISPTool支持通过连接相机采集图像。" /><meta name="DC.Relation" scheme="URI" content="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9" /><meta name="DC.Language" content="zh-CN" /><title>相机图像导入</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">相机图像导入</h1>
+
+    
+<div class="body taskbody"><p class="shortdesc">ISPTool支持通过连接相机采集图像。</p>
+
+        <div class="section prereq p" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-21DAE62F-3BC8-4006-89E1-FFBEFB1B862D">
+            <p class="p">连接相机进行在线校正前，需将相机有关ISP效果的使能节点全部关闭，保证相机采集的图像为不添加处理效果的裸图。</p>
+
+        </div>
+
+        <div class="section context" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-300532EF-4ADD-494A-AFDE-A252941DE27A">
+            <div class="note note" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-C3042CEF-B63A-41E9-B8F2-D246AFB1ACD8"><span class="notetitle">说明</span> 
+                <p class="p">ISPTool仅支持部分型号相机，具体请以实际为准。</p>
+
+            </div>
+
+        </div>
+
+<ol class="ol steps" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-BA5E1D4B-E01F-47B1-B4C5-519D2F8475FE"><li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-3837D237-2200-4E2E-AA35-98FE6AD4D6E3">
+                <span class="ph cmd">单击控制工具条的<img class="image icon" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__IMAGE_PHY_S4F_5QB" src="GUID-7BD28441-0A2F-49C0-B1A8-050F83A914F0-high.png" />打开设备列表。</span>
+            </li>
+<li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-AC0FAAA6-0A18-4D62-8856-51E374E22727">
+                <span class="ph cmd">在设备列表页面选中需要连接的相机，单击右侧的<img class="image icon" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__IMAGE_LBR_CTF_5QB" src="GUID-8D84C798-21C9-4429-9618-D681907E6D6A-high.png" />进行连接。</span>
+            </li>
+<li class="li step" id="GUID-BE1A8EE7-8840-4B88-A52C-3310C822B9C9__GUID-DAF93465-E57E-434D-9AE8-D4F22248A77D">
+                <span class="ph cmd">对已连接相机开启预览，可查看相机实时采集图像，具体可参考<a class="xref" href="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E.html#GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E" title="对已连接状态的相机，可开启预览，查看相机实时采集图像。">开启预览</a>章节。</span>
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-6568202E-6FF8-4261-ADD6-50F538AAA490.html">图像校正</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-127346B3-39DA-4FD2-835E-6D4D58D6D3BE.html">导入图像</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-7485C4DD-10B7-46AF-A4D2-134548D1F5E1.html">本地图像导入</a></span></li><li class="active"><span class="topicref">相机图像导入</span></li></ul></li><li><span class="topicref"><a href="GUID-354FAA3A-DEC8-4D2A-AF10-267219F8AAFD.html">编辑图像</a></span></li><li><span class="topicref"><a href="GUID-5485C637-1B11-4FF9-93C4-3C80C929966A.html">配置Pipeline</a></span></li><li><span class="topicref"><a href="GUID-76BC723D-A88C-44A5-96D6-6A3248451959.html">校正图像</a></span></li><li><span class="topicref"><a href="GUID-0D260488-EC88-459F-B055-EF8085517463.html">其他功能</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

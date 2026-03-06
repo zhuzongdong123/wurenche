@@ -1,0 +1,307 @@
+﻿/*变量定义 START========================================================================*/
+$normalColor=rgb(255,255,255);
+$backgroundColor=rgb(26, 39, 34);
+$hoverColor=rgb(11, 53, 124);
+
+/*变量定义 END========================================================================*/
+
+/*全局样式设置 START*/
+/*顶级widget样式 START========================================================================*/
+QWidget{color: $normalColor;font: 24px "Microsoft YaHei";outline:0px} /*默认颜色为白色*/
+
+QWidget:disabled{color: rgb(172, 172, 172);}
+QPushButton{border:none;background:rgb(34,177,253);border-radius:4px;color:rgb(255,255,255);}
+StyleButtonWithMenuStyle
+{
+	background-color: rgba(255, 255, 255,0);
+    color: rgb(255, 255, 255);
+	border-image: url(:/image/菜单1.png);
+	font: 32px "Microsoft YaHei";
+}
+StyleButtonWithMenuStyle:checked
+{
+    background-color: rgba(255, 255, 255,0);
+	color: rgb(255, 255, 255);
+	font:32px "Microsoft YaHei";
+	border-image: url(:/image/菜单2.png);
+}
+
+/*顶级标题title样式 START========================================================================*/
+MyTitleLabel{color: #31FF95;}
+ClickedWidgetForMeu{color: #31FF95;}
+
+/*顶级QPushButtont样式 START========================================================================*/
+StyleButton{border:none;border-radius:4px;font:18px;border-image: url(:/image/formOptions/button-back.png);background:rgb(0,42,106);color:rgb(255,255,255);}
+StyleButtonWithCheckedStyle{color:rgb(16,117,187);border: 1px solid rgb(16,117,187); border-radius:4px;background-color: rgb(0, 42, 104);}
+StyleButtonWithCheckedStyle:checked{background:rgb(34,177,253);border:none;color:rgb(0,42,106);}
+StyleButtonWithCheckedStyle:hover{border:1px solid rgb(34,177,253);border-radius:4px}
+
+/*顶级QTreeWidget样式 START========================================================================*/
+QTreeWidget{border:none;background-color: #011843;}
+
+QTreeWidget::item{color:rgb(255,255,255);padding:4px;height:23px}
+
+QTreeWidget::item:selected,QTreeWidget::item:hover{background-color: $hoverColor;color:#ff0000;}
+
+QTreeView::branch:has-children:!has-siblings:closed,QTreeView::branch:closed:has-children:has-siblings{border-image: none; image: url(:/image/mainwindow/展开.png);}
+
+QTreeView::branch:open:has-children:!has-siblings,QTreeView::branch:open:has-children:has-siblings{border-image: none; image: url(:/image/mainwindow/收缩.png);}
+
+QTreeWidget::indicator
+{
+	Width:15px;
+	Height:15px;
+	border:1px solid rgb(41,112,74);
+	border-radius:2px;
+}
+
+QTreeWidget::indicator:unchecked
+{
+	border:1px solid rgb(41,112,74);border-radius:2px
+}
+
+QTreeWidget::indicator:checked:hover
+{
+    border:1px solid rgb(24,144,255);border-radius:2px
+}
+
+QTreeWidget::indicator:checked
+{
+	background-color: rgb(34, 78, 61);
+	border:1px solid rgb(34, 78, 61);border-radius:2px;
+	border-image: url(:/image/mainwindow/tree/对钩.png);
+}
+
+QTreeWidget::indicator:indeterminate:pressed
+{
+    border-image: url(:/image/mainwindow/tree/正方形.png);
+}
+
+
+/*顶级QTableWidget样式 START========================================================================*/
+/*表头样式*/
+QTableView::item:selected{background-color:rgba(29,58,46);}
+
+QHeaderView::section           
+{               
+	color:rgb(255, 255, 255);
+	background-color: #053fa1;
+	min-height:40px;
+	max-height:40px;
+	margin-left:0px;
+	padding-left:4px;
+
+	border-left:0px solid rgba(0, 110, 89, 200);
+	border-right:0px solid rgba(0, 110, 89, 200);
+	border-bottom:0px solid rgba(0, 110, 89, 200);
+	border-top:0px solid rgba(0, 110, 89, 200);
+}
+
+QHeaderView::section:first,QHeaderView::section::middle      
+{
+	border-left:0px solid rgba(0, 110, 89, 200);
+	border-right:1px solid #0a2e79;
+	border-bottom:1px solid #0a2e79;
+	border-top:0px solid rgba(0, 110, 89, 200);          
+}
+
+QTableWidget                  
+{         
+	border-left:1px solid #0a2e79;
+	border-right:1px solid #0a2e79;
+	border-bottom:1px solid #0a2e79;
+	border-top:1px solid #0a2e79;                             
+	color:rgb(255,255,255);
+	gridline-color:#0a2e79;  
+	background-color: rgb(0, 29, 79);
+	outline:0px;
+	font-size:18px;
+}
+
+QTableView
+{
+	outline:0px;
+}
+
+QTreeView
+{
+	outline:0px;
+}
+
+/*上下箭头 START========================================================================*/
+QDateTimeEdit::up-button,QTimeEdit::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button {subcontrol-origin:border;
+    subcontrol-position:right top;  
+    image: url(:/image/xiangshangjiantou.png);  
+    width: 12px;
+    height: 12px;
+	margin:4px;
+}
+
+
+QDateTimeEdit::down-button,QTimeEdit::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button {subcontrol-origin:border;
+    subcontrol-position:right bottom;
+    image: url(:/image/xiangxiajiantou.png);  
+    width: 12px;
+    height: 12px;
+	margin:4px;
+}
+
+QDateTimeEdit,QTimeEdit,QSpinBox,QDoubleSpinBox{border:1px solid rgb(32,174,255);border-radius:4px;color:rgb(255,255,255);background:transparent;padding-left:6px;}
+
+/*QComboBox样式 START========================================================================*/
+QComboBox{color: #FFFFFF;background:transparent;padding-left:9px;border:1px solid #18679d1;border-radius:4px;background-color:rgb(0,46,104);border:1px solid #18679d;}
+QLineEdit{color: #FFFFFF;background:transparent;padding-left:9px;border:1px solid #18679d1;border-radius:4px;background-color:rgb(0,46,104);border:1px solid #18679d;}
+QTextEdit{color: #FFFFFF;background:transparent;padding-left:9px;border:1px solid #18679d1;border-radius:4px;background-color:rgb(0,46,104);border:1px solid #18679d;}
+QComboBox::drop-down{border:none} 
+QComboBox::down-arrow{padding-right:25px; min-width:50px;min-height:30px;image: url(:/image/mainwindow/xiangxiajiantou.png);}
+QComboBox::down-arrow:on{padding-right:25px; min-width:50px;min-height:30px; image: url(:/image/mainwindow/xiangshangjiantou.png);}
+
+/*QComboBox QFrame{background-color:#4be26e;border:none;}*/
+QComboBox QAbstractItemView {color:white;background-color:rgb(1, 24, 67);outline:0px;border:none;padding-left:0px;/*边距（还有其他方向边距设置方式）*/} 
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+	color: #FFFFFF;
+	padding-left:0px;
+}
+ 
+/* 下拉后，整个下拉窗体越过每项的样式 */
+QComboBox QAbstractItemView::item:hover,QComboBox QAbstractItemView::item:selected {
+    height: 40px;   /* 项的高度（设置pComboBox->setView(new QListView());后，该项才起作用） */
+	color: #FFFFFF;
+	padding-left:0px;
+    background-color: rgb(11,53,124);   /* 整个下拉窗体越过每项的背景色 */
+}
+
+QComboBox:hover{border:1px solid rgb(34,177,253);border-radius:4px}
+QLineEdit:hover{border:1px solid rgb(34,177,253);border-radius:4px}
+QTextEdit:hover{border:1px solid rgb(34,177,253);border-radius:4px}
+
+/*滚动条样式 START========================================================================*/
+/*纵向滚动条样式*/
+QScrollBar:vertical{
+	border-style: solid;
+	/* 纵轴-总体背景颜色 */
+    background:transparent;
+	/* 纵轴-总体背景圆角 */
+    border-radius: 5px;
+	/* 纵轴-总体宽度 */
+    min-width: 10px;
+    max-width: 10px;
+}
+QScrollBar::handle:vertical{
+	/* 纵轴-凸出部分背景颜色 */
+    background: #173D80;
+	/* 纵轴-凸出部分背景圆角 */
+    border-radius: 5px;
+	/* 纵轴-凸出最新高度 */
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover{
+	/* 纵轴-凸出部分触发背景颜色 */
+    background: #2086FF;
+}
+
+/*横向滚动条样式*/
+QScrollBar:horizontal{
+	border-style: solid;
+	/* 横轴-总体背景颜色 */
+    background:transparent;
+	/* 横轴-总体背景圆角 */
+    border-radius: 5px;
+	/* 横轴-总体宽度 */
+    min-height: 10px;
+    max-height: 10px;
+}
+QScrollBar::handle:horizontal{
+	/* 横轴-凸出部分背景颜色 */
+    background: #173D80;
+	/* 横轴-凸出部分背景圆角 */
+    border-radius: 5px;
+	/* 横轴-凸出最新高度 */
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover{
+	/* 横轴-凸出部分触发背景颜色 */
+    background: #2086FF;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page{
+    background: transparent;
+}
+QScrollBar::add-line,
+QScrollBar::sub-line{
+    background: transparent;
+}
+
+/*提示框样式*/
+QToolTip{border:1px solid #18679d; background-color: rgb(0,46,104); color:rgb(255,255,255);border-radius:4px;}
+		
+/*全局样式设置 End*/
+QCheckBox{
+    color:#20aeff;
+	font:18px "Microsoft YaHei";
+}
+
+QCheckBox::indicator:unchecked {
+      image: url(:/image/formOptions/noselect.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+      image: url(:/image/formOptions/hover.png);
+ }
+
+QCheckBox::indicator:checked {
+      image: url(:/image/formOptions/select.png);
+}
+
+
+QRadioButton::indicator:unchecked {
+      image: url(:/image/formOptions/radiobutton-unselect.png);
+}
+
+QRadioButton::indicator:checked {
+      image: url(:/image/formOptions/radiobutton-select.png);
+}
+
+
+/*listView*/
+QListWidget{border:none;background-color: #011843;}
+
+QListWidget::item{color:rgb(255,255,255);padding:4px;height:23px}
+
+QListWidget::item:selected,QListWidget::item:hover{background-color: $hoverColor;color:#ff0000;}
+
+QListWidget::indicator
+{
+	Width:20px;
+	Height:20px;
+	border-radius:2px;
+}
+
+QListWidget::indicator:unchecked
+{
+	border-radius:2px;
+	border-image: url(:/image/formOptions/noselect.png);
+}
+
+QListWidget::indicator:checked:hover
+{
+    border-radius:2px
+}
+
+QListWidget::indicator:checked
+{
+	background-color: rgb(34, 78, 61);
+	border-radius:2px;
+	border-image: url(:/image/formOptions/select.png);
+}
+
+QListWidget::indicator:indeterminate:pressed
+{
+    border-image: url(:/image/formOptions/select.png);
+}

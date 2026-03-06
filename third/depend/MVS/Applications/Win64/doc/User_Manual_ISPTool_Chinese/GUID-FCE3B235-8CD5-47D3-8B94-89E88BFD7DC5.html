@@ -1,0 +1,143 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Demosaic" /><meta name="abstract" content="Demosaic算法可将Bayer格式的图像通过插值转换为RGB图像。" /><meta name="description" content="Demosaic算法可将Bayer格式的图像通过插值转换为RGB图像。" /><meta name="DC.Relation" scheme="URI" content="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5" /><meta name="DC.Language" content="zh-CN" /><title>Demosaic</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">Demosaic</h1>
+
+    
+<div class="body conbody"><p class="shortdesc">Demosaic算法可将Bayer格式的图像通过插值转换为RGB图像。</p>
+
+<p class="p">Demosaic算法无需进行标定，单击<span class="ph uicontrol">直接校正</span>即可获取校正参数，根据需求选择插值方式后进行校正。</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__GUID-B740E43E-1120-458D-ABF4-DCBB2E04B932"><!-- --></a>插值方式</dt>
+
+                <dd class="dd pd">
+                    <ul class="ul" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__UL_ONF_3VS_YWB">
+                        <li class="li" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__GUID-826C5C07-819D-4E56-8EDA-3667DA6A3F4E">
+                            <p class="p">Quick（快速）：计算速度最快，效果较差。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__GUID-5AC79C4B-3C75-4A8C-9E26-F1654846D460">
+                            <p class="p">Balance（均衡）：计算速度适中，效果中等。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__GUID-B78DEF31-D663-42E7-8377-E01067FB739F">
+                            <p class="p">Optimal（最优）：计算速度最慢，效果最优。</p>
+
+                        </li>
+
+                    </ul>
+
+                    <dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__GUID-C060DD65-3115-4823-8B42-95659583B8A1"><!-- --></a>平滑</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">可设置是否对图像进行平滑滤波处理，启用该功能后图像会更加平滑。<span class="keyword parmname">插值方式</span>选择Optimal时，才会显示此参数。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+
+                </dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__FIG_ILD_CBM_YWB">
+            
+            <img class="image" id="GUID-FCE3B235-8CD5-47D3-8B94-89E88BFD7DC5__IMAGE_JLD_CBM_YWB" src="GUID-324599E6-C3FC-41D8-B282-F9F7C8154A0C-high.png" width="1000" />
+        <span class="figcap">图 1 Demosaic校正参数</span></div>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html">算法模块介绍</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465.html">镜头阴影校正</a></span></li><li><span class="topicref"><a href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html">图像降噪</a></span></li><li><span class="topicref"><a href="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html">色彩插值</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">Demosaic</span></li><li><span class="topicref"><a href="GUID-04BC67EE-EC73-4C5F-BBF0-18EC1622C7BC.html">DDS</a></span></li></ul></li><li><span class="topicref"><a href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html">色彩校正</a></span></li><li><span class="topicref"><a href="GUID-90089F44-464C-4842-839D-039C49D1D22A.html">图像增强</a></span></li><li><span class="topicref"><a href="GUID-877A08D7-B3A2-4120-9B97-DA0687A1492B.html">图像缩放</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

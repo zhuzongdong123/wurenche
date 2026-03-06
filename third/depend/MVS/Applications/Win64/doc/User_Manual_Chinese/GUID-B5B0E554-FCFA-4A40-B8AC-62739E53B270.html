@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="触发" /><meta name="abstract" content="相机触发分为IO输入和IO输出两种类型，可根据需求进行选择。" /><meta name="description" content="相机触发分为IO输入和IO输出两种类型，可根据需求进行选择。" /><meta name="DC.Relation" scheme="URI" content="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html" /><meta name="DC.Relation" scheme="URI" content="GUID-EC9823B7-4DD1-4232-A524-31A802680424.html" /><meta name="DC.Relation" scheme="URI" content="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80.html" /><meta name="DC.Relation" scheme="URI" content="GUID-5FDAAEAF-4D70-49EB-8669-FAC780E866D5.html" /><meta name="DC.Relation" scheme="URI" content="GUID-6D4EC3A6-4F9B-4870-AB51-CB550E1324C0.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270" /><meta name="DC.Language" content="zh-CN" /><title>触发</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">触发</h1>
+
+
+<div class="body conbody"><p class="shortdesc">相机触发分为IO输入和IO输出两种类型，可根据需求进行选择。</p>
+
+        <div class="section" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-7791F70D-BC00-4B68-94C8-71DD59578755"><h2 class="title sectiontitle">IO输入</h2>
+            
+            <p class="p">对于触发输入，可以选择内触发模式或外触发模式两种。</p>
+
+            <ul class="ul" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__UL_CJB_QRC_F3B">
+                <li class="li" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-56231BF4-4BD0-4051-A7CC-9807ECCADA98">
+                    <p class="p">选择内触发，即触发模式选择Off状态时，相机通过设备内部给出的信号采集图像。</p>
+
+                </li>
+
+                <li class="li" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-467C36ED-8CEF-4CCE-8477-9720A00F177D">
+                    <p class="p">选择外触发模式时，即触发模式选择On状态时，相机通过外部给出的信号采集图像。具体触发源及参数设置请见<a class="xref" href="GUID-EC9823B7-4DD1-4232-A524-31A802680424.html#GUID-EC9823B7-4DD1-4232-A524-31A802680424" title="IO输入可设置相机的触发相关功能。相机收到触发信号时会采集图像。">IO输入</a>章节。</p>
+
+                    <div class="note note" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-DF6BD7A0-1791-46EF-A5E5-403CBB52BC52"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__UL_EHJ_T4F_PVB">
+                            <li class="li" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-8D5CF808-9576-43B9-852B-A0C7C0E8339A">
+                                <p class="p">不同型号相机支持的外触发源有所差别，请以实际显示为准。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-901E9EE4-BA33-458B-B287-B144B6DFB222">
+                                <p class="p">当线阵相机的IO输入触发源选择编码器或变频器时，相关参数设置请见<a class="xref" href="GUID-5FDAAEAF-4D70-49EB-8669-FAC780E866D5.html#GUID-5FDAAEAF-4D70-49EB-8669-FAC780E866D5" title="线阵相机开启行触发时，设置编码器信号源进行触发。">编码器控制</a>章节和<a class="xref" href="GUID-6D4EC3A6-4F9B-4870-AB51-CB550E1324C0.html#GUID-6D4EC3A6-4F9B-4870-AB51-CB550E1324C0" title="线阵相机帧触发或行触发开启时，可将硬件触发信号或轴编码器控制信号频率通过相机的频率转换模块转换为相机所需要的帧触发或行触发信号频率，从而进行触发，处理流程如下图所示。">变频器控制</a>章节。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section" id="GUID-B5B0E554-FCFA-4A40-B8AC-62739E53B270__GUID-97D49730-B969-4B9F-8E18-0330F5B72325"><h2 class="title sectiontitle">IO输出</h2>
+            
+            <p class="p">相机输出信号为电平信号，可用于控制频闪光源等外部设备。输出信号可通过设置Strobe信号实现。Strobe信号可使相机在事件源发生时，直接输出信号给到外部设备。您可以设置Strobe信号的事件源，输出信号的持续时间以及输出延迟时间。</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-130C0128-05E9-430C-B326-59D7F8EF4FFB.html">相机属性配置</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-8693089C-163D-4124-AC76-DB2B0ECE6B83.html">属性树</a></span></li><li><span class="topicref"><a href="GUID-174775E7-C15F-4BB1-8ACE-5119E4787E7B.html">常用属性</a></span></li><li class="active"><span class="topicref">触发</span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-EC9823B7-4DD1-4232-A524-31A802680424.html">IO输入</a></span></li><li><span class="topicref"><a href="GUID-C3450A16-F0C4-45CA-87EC-27B53DD99B80.html">IO输出</a></span></li><li><span class="topicref"><a href="GUID-5FDAAEAF-4D70-49EB-8669-FAC780E866D5.html">编码器控制</a></span></li><li><span class="topicref"><a href="GUID-6D4EC3A6-4F9B-4870-AB51-CB550E1324C0.html">变频器控制</a></span></li></ul></li><li><span class="topicref"><a href="GUID-A49E183B-E790-47BB-AD38-E32914274316.html">高级属性</a></span></li><li><span class="topicref"><a href="GUID-1D27B98E-1204-4E8F-9530-FD8C3F9AE46E.html">温度窗口</a></span></li><li><span class="topicref"><a href="GUID-7578CFB1-8F1C-470D-B3C4-1E0E99245AAA.html">导入/导出单个设备属性</a></span></li><li><span class="topicref"><a href="GUID-334F2293-5F58-4FF6-95F2-BA8810339776.html#GUID-334F2293-5F58-4FF6-95F2-BA8810339776">文件存取</a></span></li><li><span class="topicref"><a href="GUID-20B2ED4F-3F33-43A6-9DC4-2CD80957480D.html">用户集控制</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

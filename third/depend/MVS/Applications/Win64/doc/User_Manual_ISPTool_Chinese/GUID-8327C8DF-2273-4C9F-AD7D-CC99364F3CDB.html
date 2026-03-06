@@ -1,0 +1,189 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="LUT" /><meta name="abstract" content="LUT是一个可供用户自定义的灰度映射表，可对感兴趣的灰度范围进行拉伸、凸显等操作。" /><meta name="description" content="LUT是一个可供用户自定义的灰度映射表，可对感兴趣的灰度范围进行拉伸、凸显等操作。" /><meta name="DC.Relation" scheme="URI" content="GUID-90089F44-464C-4842-839D-039C49D1D22A.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB" /><meta name="DC.Language" content="zh-CN" /><title>LUT</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">LUT</h1>
+
+    
+<div class="body conbody"><p class="shortdesc">LUT是一个可供用户自定义的灰度映射表，可对感兴趣的灰度范围进行拉伸、凸显等操作。</p>
+
+<p class="p">使用LUT模块可直接进行校正，相关参数如下：</p>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-EA2EE558-735A-43AB-9A0F-BEC1936815B5"><!-- --></a>Gamma</dt>
+
+                <dd class="dd pd">
+                    <p class="p">设置Gamma值可以实现图像的非线性色调映射，参数范围为[0，100]。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-4B33427F-C96C-4FAF-A903-68716B5B263B"><!-- --></a>对比度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">参数范围为[-1，1]，当值为0时，表示对比度保持不变，小于0表示对比度降低，大于0表示对比度提高。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-C05AD5BD-16B5-4E12-89FE-FD1A682C2AC5"><!-- --></a>亮度</dt>
+
+                <dd class="dd pd">
+                    <p class="p">参数范围为[-1，1]，当值为0时，表示亮度保持不变，小于0表示亮度降低，大于0表示亮度提高。</p>
+
+                </dd>
+
+            
+        </dl>
+
+        <dl class="dl parml">
+            
+                <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-898D201F-392A-438D-83CE-76C6A7BC51C0"><!-- --></a>LUT线型</dt>
+
+                <dd class="dd pd">对LUT线型进行选择，有如下几种线型：<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-FB976F97-B002-4082-AB82-D0AD3367D940"><!-- --></a>Adaptive</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">自适应线。根据输入的<span class="keyword parmname">Gamma</span>、<span class="keyword parmname">对比度</span>以及<span class="keyword parmname">亮度</span>数值自适应生成LUT曲线，不可自定义更改。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-CA1949A0-EDF0-48A7-9ED8-50A01DF8EF95"><!-- --></a>Fold Line</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">折线。可自定义更改，双击折线中需要更改的位置，拖动即可。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-98E7E5E1-802A-4C7C-9503-357E0024C4A2"><!-- --></a>Curve</dt>
+
+                            <dd class="dd pd">
+                                <p class="p">曲线。可自定义更改，双击曲线中需要更改的位置，拖动即可。</p>
+
+                            </dd>
+
+                        
+                    </dl>
+<dl class="dl parml">
+                        
+                            <dt class="dt pt dlterm"><a name="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__GUID-23622481-E54E-4A95-AE9F-9EBED8A92439"><!-- --></a>Free Line</dt>
+
+                            <dd class="dd pd">自由线。可自定义绘制，单击界面拖动绘制即可。</dd>
+
+                        
+                    </dl>
+</dd>
+
+            
+        </dl>
+
+        <div class="fig fignone" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__FIG_UQT_YDG_5QB">
+            
+            <img class="image" id="GUID-8327C8DF-2273-4C9F-AD7D-CC99364F3CDB__IMAGE_TSL_BWH_DZB" src="GUID-DB7FA5F4-D57A-4DC3-8C1D-9C01775724C0-high.png" width="1000" />
+        <span class="figcap">图 1 LUT校正参数</span></div>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html">算法模块介绍</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465.html">镜头阴影校正</a></span></li><li><span class="topicref"><a href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html">图像降噪</a></span></li><li><span class="topicref"><a href="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html">色彩插值</a></span></li><li><span class="topicref"><a href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html">色彩校正</a></span></li><li><span class="topicref"><a href="GUID-90089F44-464C-4842-839D-039C49D1D22A.html">图像增强</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">LUT</span></li><li><span class="topicref"><a href="GUID-ADE4840F-BFC9-417F-855B-86336CA0A42F.html">对比度</a></span></li><li><span class="topicref"><a href="GUID-42F36AE3-7DC9-473D-8C35-AADD8C229521.html">锐化</a></span></li><li><span class="topicref"><a href="GUID-C850EE30-051B-4955-8395-11F3021F1FAE.html">局部对比度增强</a></span></li></ul></li><li><span class="topicref"><a href="GUID-877A08D7-B3A2-4120-9B97-DA0687A1492B.html">图像缩放</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

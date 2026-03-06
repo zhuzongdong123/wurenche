@@ -1,0 +1,12 @@
+fil = new Array();
+fil["0"]= "GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8.html@@@Legal Information@@@\u00A9 2024 Hangzhou Hikrobot Co., Ltd. All rights reserved. About this Manual The Manual includes instructions for using and managing the Product. Pictures, charts, images and all other information...";
+fil["1"]= "GUID-5949F327-2134-4FBC-BFC9-27E0EFE4D000.html@@@IO WaveForm Detection@@@After an event in the event chart is parsed, you can view the corresponding IO waveform in the IO waveform chart and the number of pulses can be calculated in the real time...";
+fil["2"]= "GUID-670A53BB-1AFA-49CF-956D-9B08A064996D.html@@@Release Notes@@@Key updates of each version are as follows...";
+fil["3"]= "GUID-67965B69-20BD-422C-BCA1-F3CF617B9985.html@@@Log Management@@@After detecting frame grabber / camera events, the Tool can diagnose and accurately locate the abnormal logs in the log list. The tool can be used to monitor and analyze the abnormal events...";
+fil["4"]= "GUID-A55841DB-996D-40E2-8BD8-76708F30A19C.html@@@Event Overview@@@You can take an overview of real-time frame grabber / camera events...";
+fil["5"]= "GUID-AF8E21AF-58ED-4215-98EE-41BD27A2AD61.html@@@Tool Introduction@@@Device Diagnostic Tool (hereinafter simplified as &quot;the Tool&quot;) can monitor the running status of devices in real time, and display the event overview, event chart, IO waveform, and log records...";
+fil["6"]= "GUID-BECF4D61-236C-41D2-A2EE-D7196A931292.html@@@Symbol Conventions@@@The symbols that might be found in this document are defined as follows. Symbol Description Note Provides additional information to emphasize or supplement important points of the main text. CAUTION...";
+fil["7"]= "GUID-CFC17406-3F6C-42A7-B544-0570385046B7.html@@@Event Diagnostic@@@You can view the recorded events of the selected time period in an event chart and view event levels of 6-second events...";
+fil["8"]= "GUID-E89A10BD-DB4F-4A6D-9C74-6856A8AEB593.html@@@Get Support@@@You can get support from us in the following ways...";
+fil["9"]= "GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086.html@@@Disclaimer@@@The manual guides you to establish and configure the Software. To ensure the properness of usage and stability of the Software, refer to the contents below and read the manual carefully before installation and operation...";
+var doStem = false;searchLoaded = true;

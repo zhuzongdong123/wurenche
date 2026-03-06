@@ -1,0 +1,269 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Other Features" /><meta name="abstract" content="Other features are provided for the GigE Vision cameras on the device list, including GVCP Settings, GVSP Settings, GenICam XML settings, device user ID settings, etc." /><meta name="description" content="Other features are provided for the GigE Vision cameras on the device list, including GVCP Settings, GVSP Settings, GenICam XML settings, device user ID settings, etc." /><meta name="DC.Relation" scheme="URI" content="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F" /><meta name="DC.Language" content="en-US" /><title>Other Features</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    
+    <h1 class="title topictitle1">Other Features</h1>
+
+
+<div class="body conbody"><p class="shortdesc">Other features are provided for the GigE Vision cameras on the device list,
+        including GVCP Settings,
+        GVSP
+        Settings, GenICam XML settings, device user ID settings, etc.</p>
+
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-D19869E3-8922-47B9-BC43-8A092A987E78"><h2 class="title sectiontitle">GVCP Settings</h2>
+            
+            <p class="p">GVCP is short for GigE Vision Control Protocol, which is a communication
+                protocol for the communication between the Software and a GigE Vision camera. GVCP
+                allows the Software to configure and control a GigE Vision camera. The Software
+                sends a command and waits for an acknowledgment (ACK) from the camera before sending
+                its next command, hence data integrity is ensured. In this ACK scheme, the Software
+                can get and set various features of the camera.</p>
+
+            <p class="p">When the network condition is not good, data losses may occur in this
+                ACK scheme. In this case, you can configure the GVCP settings to allow the Software
+                to resend the command for multiple times within a certain time period, hence data
+                losses can be alleviated.</p>
+
+            <div class="note note" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-46619348-38FE-4017-B1D4-D5EC6848CC65"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__UL_UKX_FRX_QTB">
+                    <li class="li" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-BBCED801-0E40-473B-B9C9-F3129DEE9724">
+                        <p class="p">GVCP settings is only available when the camera is connected
+                            or in acquisition.</p>
+
+                    </li>
+
+                    
+                    <li class="li" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-C001E445-B73D-453F-B1AD-DC36FEDA6213">
+                        <p class="p">Cameras connected via frame grabbers does not support this function.</p>
+
+                    </li>
+
+                    
+                </ul>
+
+            </div>
+
+            <p class="p">Right-click a GigE Vision camera and then click <span class="ph uicontrol">GVCP
+                    Settings</span> to open the GVCP Setting window and then configure the two
+                parameters below.</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-6CD25A5F-C130-4BD8-B0AB-96C5EF2D4D5E"><!-- --></a>Resending Times</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">Specify the times for resending the command. </p>
+
+                        <p class="p">The default value is 3, and the value range is from 0 to
+                            100.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-BF750863-4532-4047-BE55-63EA16B5270D"><!-- --></a>Timeout</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">Specify the time period (ms) for resending the command. In
+                            other words, if the time for resending the command reaches the specified
+                            time period, command resending will end.</p>
+
+                        <p class="p">The default value is 500, and the value range is from 0 to
+                            10,000.</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__FIG_IBK_QYF_CKB">
+                
+                <img class="image" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__IMAGE_NTC_GJ2_3NB" src="GUID-8FEE210C-84DE-4374-8E09-48112CB7F814-high.png" width="1200" />
+            <span class="figcap">Figure 1 GVCP Settings</span></div>
+
+        </div>
+
+        
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-02F2FFC6-52E3-4C61-AD21-EA318EB2B48C"><h2 class="title sectiontitle">GVSP Settings</h2>
+            
+            <p class="p">GVSP is short for GigE Vision Streaming Protocol, which provides a
+                protocol for getting non-compressed and compressed data streams. For transmission an
+                image is split into several packages and the packages are recompiled when received.
+                When you set the <span class="keyword parmname">Timeout</span>, you set the waiting
+                duration between each package of an image. If the next package is not received when
+                the waiting duration is longer than the <span class="keyword parmname">Timeout</span>
+                value, the Software will stop receiving the following packages of image and
+                recompile packages received before. When the network condition is not good, setting
+                a short Timeout may cause a low resolution of the image; while setting a long
+                Timeout may lower the continuity of image acquisition.</p>
+
+            <div class="note note" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-6ECD55F6-FE1F-427C-9B4F-11F3D0037D2B"><span class="notetitle">Note</span> 
+                <ul class="ul" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__UL_WQ5_SLH_2NB">
+                    <li class="li" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-FDD6531E-8CFD-40F5-8E0D-9356836F2748">
+                        <p class="p">GVSP settings is only available when the camera is
+                            connected.</p>
+
+                    </li>
+
+                    <li class="li" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-721B0EDE-B9D8-48B4-98ED-13CDB9431929">
+                        <p class="p">By default, the <span class="keyword parmname">Timeout</span> is
+                                <kbd class="ph userinput">300</kbd>.</p>
+
+                    </li>
+
+                    
+                    <li class="li" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-AC85B2CD-DD18-4578-88E9-114F7A1EB641">
+                        <p class="p">Cameras connected via frame grabbers does not support this function.</p>
+
+                    </li>
+
+                    
+                </ul>
+
+            </div>
+
+            <p class="p">Right-click a GigE Vision camera and then click <span class="ph uicontrol">GVSP
+                    Settings</span> to open the GVSP Setting window and then configure
+                    <span class="keyword parmname">Timeout</span>.</p>
+
+            <div class="fig fignone" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__FIG_DPR_BFB_2NB">
+                
+                <img class="image" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__IMAGE_EPR_BFB_2NB" src="GUID-A5D7B383-7EF9-4450-B0C3-BC972694738A-high.png" width="1200" />
+            <span class="figcap">Figure 2 GVSP Settings</span></div>
+
+        </div>
+
+        
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-4909B6BE-2BCA-4E4D-AA55-CCAD986334D3"><h2 class="title sectiontitle">Save GenICam XML</h2>
+            
+            <p class="p">Right-click a GigE Vision camera, and then click <span class="ph uicontrol">Save GenICam
+                    XML</span> to save the camera information as XML file for purposes such as
+                secondary development of the Software.</p>
+
+            <div class="note note" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-AD4BB846-7490-45FA-AECD-D2A956C3B63F"><span class="notetitle">Note</span> 
+                <p class="p">Saving GenICam XML is only available when the camera is connected or
+                    in acquisition.</p>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-9F5148B1-FB65-4CCD-B304-24F773B131E3"><h2 class="title sectiontitle">Rename User ID</h2>
+            
+            <p class="p">Right-click a GigE Vision camera, and then click <span class="ph uicontrol">Rename User
+                    ID</span> to edit user ID of the camera.</p>
+
+            <div class="note note" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-8D34786E-456C-4ABE-8C69-5BCD8A5B8486"><span class="notetitle">Note</span> 
+                <p class="p">Renaming user ID is only available when the camera is connected or
+                    in acquisition.</p>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-DE073AF7-75FF-4491-94C6-13612996181C"><h2 class="title sectiontitle">Configure NIC</h2>
+            
+            <p class="p">Right-click a GigE Vision interface and then click <span class="ph uicontrol">NIC
+                    Settings</span> to set NIC parameters. For details, see <a class="xref" href="GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB.html#GUID-423FD99B-631F-43A6-BB35-60ED2BC571EB" title="Before using GigE Vision cameras, you need to check whether the PC and the cameras are on the same subnet, and whether the Jumbo Frame functionality has been enabled in the Windows system.">Configurations before Using GigE Vision Cameras</a>.</p>
+
+        </div>
+
+        <div class="section" id="GUID-0DAC700B-3454-4EC4-BDE2-DAB37371AA6F__GUID-275E3F38-38D4-4E01-9C60-1A107604FEEF"><h2 class="title sectiontitle">Stick Camera to Top</h2>
+            
+            <p class="p">Right-click a GigE Vision camera and then click <span class="ph uicontrol">Stick to
+                    Top</span> to stick the camera to the top of the GigE Vision camera
+                list.</p>
+
+            <p class="p">If you want to cancel sticking the camera to the top, right-click the
+                camera and then click <span class="ph uicontrol">Cancel Sticking to Top</span>.</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html">Device Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html">GigE Vision Camera Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-563302CA-5BBB-495F-A135-714B20A09C5E.html#GUID-563302CA-5BBB-495F-A135-714B20A09C5E">Add  GigE Vision Camera</a></span></li><li><span class="topicref"><a href="GUID-55CD1D96-0B7E-437E-87DC-CDEBB25683C4.html">Status of GigE Vision Camera</a></span></li><li><span class="topicref"><a href="GUID-FDA611BA-B04A-4239-B294-29080397B98E.html">Edit Camera IP Address</a></span></li><li><span class="topicref"><a href="GUID-197B2281-A024-44B2-A251-B67630F23823.html">Multicast Settings</a></span></li><li class="active"><span class="topicref">Other Features</span></li></ul></li><li><span class="topicref"><a href="GUID-B8824669-331C-4835-910A-D7A7BA854C62.html#GUID-B8824669-331C-4835-910A-D7A7BA854C62">USB3 Vision Camera Management</a></span></li><li><span class="topicref"><a href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96">PCIe Device Management</a></span></li><li><span class="topicref"><a href="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6.html#GUID-46106592-475C-46BE-8EEC-D95C478EE7F6">Serial Port Device Management</a></span></li><li><span class="topicref"><a href="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D.html">GenTL Device Management</a></span></li><li><span class="topicref"><a href="GUID-1FAC464C-726A-4724-81AF-6BAC778960AC.html">Event Monitor</a></span></li><li><span class="topicref"><a href="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25.html">Add a Virtual Camera</a></span></li><li><span class="topicref"><a href="GUID-647F1CA0-8DEE-469B-B0A5-900C8B0EB64E.html">Dead Pixel Correction</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

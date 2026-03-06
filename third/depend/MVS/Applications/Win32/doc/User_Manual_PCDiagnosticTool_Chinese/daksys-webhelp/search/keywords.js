@@ -1,0 +1,9 @@
+var keywords=[{w:"\u6CD5\u5F8B\u58F0\u660E",p:["p0"]},{w:"\u8BCA\u65AD\u8FC7\u7A0B",p:["p1"]},{w:"\u5DE5\u5177\u4ECB\u7ECD",p:["p2"]},{w:"\u7B26\u53F7\u7EA6\u5B9A",p:["p3"]},{w:"\u83B7\u5F97\u652F\u6301",p:["p4"]},{w:"\u524D\u8A00",p:["p5"]},{w:"\u53D1\u7248\u8BF4\u660E",p:["p6"]}];
+var ph={};
+ph["p0"]=[0];
+ph["p1"]=[1];
+ph["p2"]=[2];
+ph["p3"]=[3];
+ph["p4"]=[4];
+ph["p5"]=[5];
+ph["p6"]=[6];

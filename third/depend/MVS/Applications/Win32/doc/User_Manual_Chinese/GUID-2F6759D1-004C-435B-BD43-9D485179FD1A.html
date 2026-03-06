@@ -1,0 +1,154 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="坏点校正" /><meta name="abstract" content="坏点校正功能可对相机的坏点信息进行导入导出。" /><meta name="description" content="坏点校正功能可对相机的坏点信息进行导入导出。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A" /><meta name="DC.Language" content="zh-CN" /><title>坏点校正</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">坏点校正</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">坏点校正功能可对相机的坏点信息进行导入导出。</p>
+
+<ol class="ol steps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-EBF380CA-87B2-4C24-BD7B-077F5E0186CB"><li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-B744BB9E-66A7-4816-ABFE-6FC69222E6F3">
+                <span class="ph cmd">在设备列表选择需要导入或导出坏点信息的相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-4BEE346D-B762-4C6C-9FBE-197937172894">
+                <span class="ph cmd">双击连接相机。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-7D05DB33-E68B-4893-97EA-C87B016875A1">
+                <span class="ph cmd">设备列表选中相机，右键单击选择<span class="ph uicontrol">坏点校正</span>进入坏点校正界面，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__FIG_CHF_1QW_NVB">
+                        
+                        <img class="image" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__IMAGE_UWN_CQW_NVB" src="GUID-DFFAB8E8-6D96-40A8-B06B-F275883F8EBD-high.jpg" width="1000" />
+                    <span class="figcap">图 1 坏点校正</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-19AA30D4-ED6D-45F7-9760-6651037ECB98"><strong>可选操作： </strong>
+                <span class="ph cmd">导出坏点信息文件。</span>
+                <ol type="a" class="ol substeps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__SUBSTEPS_EXT_DTW_NVB">
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-EF5F37A5-EF25-4B75-A87F-9EE1D61B035C">
+                        <span class="ph cmd">点击<span class="ph uicontrol">导出</span>按钮。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-68F02C5F-CB63-4CF1-8AE4-30B1E86111D6">
+                        <span class="ph cmd">选择导出文件的保存路径并<span class="ph uicontrol">保存</span>。</span>
+                        <div class="itemgroup stepresult">
+                            <p class="p">此时会显示实时导出进度直至提示“导出成功”。</p>
+
+                        </div>
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step stepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-31E4D852-336F-4111-8CF1-8F27E65F7CB6"><strong>可选操作： </strong>
+                <span class="ph cmd">导入坏点信息文件。</span>
+                <ol type="a" class="ol substeps" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__SUBSTEPS_LYQ_PSW_NVB">
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-5A8C58A2-45C7-4712-9370-8AC747B45B7F">
+                        <span class="ph cmd">点击<img class="image" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__IMAGE_O5P_ZRW_NVB" src="GUID-036B75D6-7C7E-4BE2-9F01-EC8743ED7EF8-high.png" />选择需要导入的mfa坏点信息文件，并<span class="ph uicontrol">打开</span>。</span>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-17B82D08-8372-4D88-B9E2-1C25028EB8B1">
+                        <span class="ph cmd">点击<span class="ph uicontrol">导入</span>按钮。</span>
+                        <div class="itemgroup stepresult">
+                            <p class="p">此时会显示实时导入进度直至弹出“导入成功”的提示窗口。</p>
+
+                        </div>
+                    </li>
+
+                    <li class="li substep substepexpand" id="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A__GUID-6355B8C8-647F-4393-96E6-C4CC932C8E3C">
+                        <span class="ph cmd">点击提示窗口的<span class="ph uicontrol">确定</span>。</span>
+                    </li>
+
+                </ol>
+
+            </li>
+</ol>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html">设备管理</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE.html">网口相机管理</a></span></li><li><span class="topicref"><a href="GUID-B8DE0282-164E-4705-B4C3-FE18D081E065.html#GUID-B8DE0282-164E-4705-B4C3-FE18D081E065">U3V相机管理</a></span></li><li><span class="topicref"><a href="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA.html#GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA">PCIe设备管理</a></span></li><li><span class="topicref"><a href="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96.html#GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96">串口设备管理</a></span></li><li><span class="topicref"><a href="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9.html">GenTL管理</a></span></li><li><span class="topicref"><a href="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE.html">事件监视</a></span></li><li><span class="topicref"><a href="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719.html">添加虚拟相机</a></span></li><li class="active"><span class="topicref">坏点校正</span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

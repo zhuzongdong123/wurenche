@@ -1,0 +1,287 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Serial Port Device Management" /><meta name="abstract" content="The software supports connecting devices that transmit data through a serial port. After connecting serial port devices to the Software, you can perform further operations, such as device parameter configuration." /><meta name="description" content="The software supports connecting devices that transmit data through a serial port. After connecting serial port devices to the Software, you can perform further operations, such as device parameter configuration." /><meta name="DC.Relation" scheme="URI" content="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6" /><meta name="DC.Language" content="en-US" /><title>Serial Port Device Management</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body "><div class="nested0" id="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6">
+    <h1 class="title topictitle1">Serial Port Device Management</h1>
+
+
+<div class="body conbody"><p class="shortdesc">The
+        software supports connecting devices that transmit data through a serial port.
+        After connecting serial port devices to the Software, you can perform
+        further operations, such as device parameter configuration.</p>
+
+        <div class="note note" id="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6__GUID-B76D816C-0DCB-4F0B-8630-AD74160271DA"><span class="notetitle">Note</span> 
+            <p class="p">The Serial Port interface supports Camera Link cameras.</p>
+
+        </div>
+
+        
+        <ul class="ul" id="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6__UL_MFM_S4F_2CC">
+            <li class="li" id="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6__GUID-2935A787-80BD-486F-AF21-D7CE8A5E681F">
+                <p class="p"><a class="xref" href="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6.html#GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF" title="The Software supports serial port devices. You can connect serial port devices to the Software to perform further operations such as feature configuration.">Add Serial Port Device</a></p>
+
+            </li>
+
+            <li class="li" id="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6__GUID-D3BE5E36-9207-4B93-AB7B-7EE531B6E882">
+                <p class="p"><a class="xref" href="GUID-46106592-475C-46BE-8EEC-D95C478EE7F6.html#GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39" title="The Software provides two icons to indicate the status of the serial port device. You can perform further management according to the status of the devices.">Status of Serial Port Device</a></p>
+
+            </li>
+
+        </ul>
+
+</div>
+
+
+<div class="topic task nested1" xml:lang="en-US" lang="en-US" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF">
+    <h2 class="title topictitle2">Add Serial Port Device</h2>
+
+
+<div class="body taskbody"><p class="shortdesc">The Software supports
+        serial
+        port devices. You can connect serial port devices to the Software to
+        perform further operations such as feature configuration. </p>
+
+        <div class="section prereq p" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-EDE19278-B8EC-4423-89ED-EBD4A2A85D4A">
+            <p class="p">Ensure
+                you
+                have properly connected a serial port device to the PC on which
+                the Software runs.</p>
+
+        </div>
+
+<p class="li stepsection" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-6B330278-FA7A-4559-AA03-F00697C52419">
+                <div class="note note" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-3B6A2828-A327-47F3-904B-1FEE3E5504A2"><span class="notetitle">Note</span> 
+                    <ul class="ul" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__UL_P2C_WCK_MJB">
+                        <li class="li" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-9488C2EA-64F6-40F5-9873-7E94FD677551">
+                            <p class="p">The Software doesn't support the image
+                                acquisition
+                                and live view features for the serial port
+                                devices. You can only manage features of serial port devices after
+                                connecting them to the Software
+                                if
+                                no third-party frame grabber is installed on the PC.
+                                </p>
+
+                        </li>
+
+                        <li class="li" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-D81CD9DD-F018-4204-BDA5-3612F9E83BF5">
+                            <p class="p">To acquire streams and
+                                view
+                                real-time acquisition of serial port devices, you
+                                need to
+                                install
+                                third-party frame grabber on the PC. </p>
+
+                        </li>
+
+                        <li class="li" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-211DEAC1-1494-4AE2-87C4-698ADDD1DD25">
+                            <p class="p">Serial port device doesn't support Bayer settings and
+                                ROI/AOI settings. </p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </p><ol class="ol steps" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-5F8695B5-8F6E-4B0B-9F1A-EB06FDAA020E"><li class="li step stepexpand" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-CC6C15C2-E944-416E-A3CE-812C8B619D72">
+                <span class="ph cmd">Hover
+                    the cursor to
+                    <span class="ph uicontrol">Serial Port</span>, and then click <img class="image icon" src="GUID-EE689C0E-48C5-40A5-91E9-3548786D6A07-high.png" />to refresh the serial port device list. </span>
+                <div class="itemgroup stepresult">
+                    <p class="p">The
+                        cameras will be displayed under the serial port interface
+                        of the device list.</p>
+
+                    <div class="note note" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-C61B124A-8BA0-4973-9413-04EADC46064F"><span class="notetitle">Note</span> 
+                        <ul class="ul" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__UL_XNM_H5F_2KB">
+                            <li class="li" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-33E05B7B-B4D7-4D1E-9E9D-EC66AF734182">
+                                <p class="p">The time for refreshing serial port device is longer
+                                    than that of other types of devices. Please wait patiently.</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-DA9D7F1E-3C5D-4E1C-A4A7-A0463C1E6967">
+                                <p class="p">The serial port device may be enumerated for two
+                                    times via serial port and frame grabber respectively.</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-15AB0BD9-C223-44E8-9067-7C3A5EC153B0">
+                <span class="ph cmd">Connect the device to the Software.</span>
+            </li>
+<li class="li step stepexpand" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-4474F1EC-F454-453C-AB25-647CCEA1BAB9"><strong>Optional: </strong>
+                <span class="ph cmd">Right-click the device, and then click <span class="ph uicontrol">Connection Parameter
+                        Settings</span> to set the baud rate of the device. </span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-3EFDFA35-2914-40E9-8FE1-5BC3CEE0EFCF__GUID-5165520D-145A-4470-8C45-2CE95A186CA4"><span class="notetitle">Note</span> 
+                        <p class="p">The higher the baud rate, the faster the signals can be
+                            transmitted.</p>
+
+                    </div>
+
+                </div>
+            </li>
+</ol>
+
+</div>
+
+</div>
+<div class="topic concept nested1" xml:lang="en-US" lang="en-US" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39">
+    <h2 class="title topictitle2">Status of Serial Port Device</h2>
+
+
+<div class="body conbody"><p class="shortdesc">The Software provides two icons to indicate the status of the serial port
+        device. You can
+        perform
+        further management according to the status of the devices.</p>
+
+<p class="p">The following table shows the descriptions of different
+            statuses.</p>
+
+        
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39__TABLE_MV3_2N5_BKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">Table 1 Status Description</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="25.510204081632654%" id="d7649e250">
+                            <p class="p">Status Icon</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="74.48979591836735%" id="d7649e256">
+                            <p class="p">Description</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="25.510204081632654%" headers="d7649e250 "><img class="image icon" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39__IMAGE_VCL_D45_BKB" src="GUID-14C141B1-734C-484E-A525-062C428BE035-high.png" /></td>
+
+                        <td class="entry" valign="top" width="74.48979591836735%" headers="d7649e256 ">
+                            <p class="p">Available
+                                and disconnected. </p>
+
+                            <p class="p">You can double-click the device, or select the device and
+                                then click <img class="image icon" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39__IMAGE_YQR_L45_BKB" src="GUID-AA8E455C-D4E7-4659-8C73-9B22C3663B14-high.png" />
+                                on the control toolbar to connect it to the
+                                Software. Once connected, the status icon changes to <img class="image icon" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39__IMAGE_WT3_445_BKB" src="GUID-9286A1D3-C54E-4B47-822F-06D34E2402D0-high.png" />.</p>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="entry" valign="top" width="25.510204081632654%" headers="d7649e250 "><img class="image icon" id="GUID-56BC969C-D72A-4175-A9CE-C164BC20ED39__IMAGE_CHY_VN5_BKB" src="GUID-9286A1D3-C54E-4B47-822F-06D34E2402D0-high.png" /></td>
+
+                        <td class="entry" valign="top" width="74.48979591836735%" headers="d7649e256 ">
+                            <p class="p">Connected.</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+</div>
+
+</div>
+</div>
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-7807DA4F-CEC8-422D-94C0-36A6BCAF6255.html">Device Management</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-F6FC6C26-0CFF-46C9-A718-84ADB7035DCA.html">GigE Vision Camera Management</a></span></li><li><span class="topicref"><a href="GUID-B8824669-331C-4835-910A-D7A7BA854C62.html#GUID-B8824669-331C-4835-910A-D7A7BA854C62">USB3 Vision Camera Management</a></span></li><li><span class="topicref"><a href="GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96.html#GUID-DDDC8F1C-22FE-4582-974C-8677E5EF6D96">PCIe Device Management</a></span></li><li class="active"><span class="topicref">Serial Port Device Management</span></li><li><span class="topicref"><a href="GUID-11D1D7E0-67D1-485D-A78B-4CA36155BF6D.html">GenTL Device Management</a></span></li><li><span class="topicref"><a href="GUID-1FAC464C-726A-4724-81AF-6BAC778960AC.html">Event Monitor</a></span></li><li><span class="topicref"><a href="GUID-87597F90-C0A4-47B9-BAB6-81EBCE3E8E25.html">Add a Virtual Camera</a></span></li><li><span class="topicref"><a href="GUID-647F1CA0-8DEE-469B-B0A5-900C8B0EB64E.html">Dead Pixel Correction</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

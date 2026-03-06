@@ -1,0 +1,14 @@
+﻿cl : 命令行 warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  ImageSave.cpp
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(307): warning C4244: “=”: 从“uint64_t”转换到“unsigned int”，可能丢失数据
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(311): warning C4244: “参数”: 从“int64_t”转换到“size_t”，可能丢失数据
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(320): warning C4244: “=”: 从“int64_t”转换到“unsigned int”，可能丢失数据
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(363): warning C4244: “参数”: 从“uint64_t”转换到“size_t”，可能丢失数据
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(299): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(335): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+c:\program files (x86)\mvs\development\samples\vc\vs\simplesamples\imagesave\imagesave.cpp(359): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+ImageSave.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  ImageSave_VS2015.vcxproj -> C:\Program Files (x86)\MVS\Development\Samples\VC\VS\SimpleSamples\ImageSave\Win32\Debug\ImageSave.exe

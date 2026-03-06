@@ -1,0 +1,183 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="镜头阴影校正" /><meta name="abstract" content="镜头阴影校正即LSC校正，侧重消除镜头对于光线折射不均匀，导致的中心照度差异问题。" /><meta name="description" content="镜头阴影校正即LSC校正，侧重消除镜头对于光线折射不均匀，导致的中心照度差异问题。" /><meta name="DC.Relation" scheme="URI" content="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465" /><meta name="DC.Language" content="zh-CN" /><title>镜头阴影校正</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">镜头阴影校正</h1>
+
+
+<div class="body conbody"><p class="shortdesc">镜头阴影校正即LSC校正，侧重消除镜头对于光线折射不均匀，导致的中心照度差异问题。</p>
+
+        <p class="p">使用LSC模块时需要进行标定和校正。</p>
+
+        <div class="section" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h2 class="title sectiontitle">标定参数</h2>
+            
+            <p class="p">LSC标定需要设置如下参数：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-32399F1D-F548-475B-B356-2C71139DA227"><!-- --></a>边缘填充系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">以设定的系数值为半径对图像边缘像素进行边缘填充以完成相关计算。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-27E243FB-64C8-43D3-A230-21867CD7C438"><!-- --></a>标定方式</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可选择以图像中心为基准（Centre）、以最亮区域为基准（BrightestArea）或以目标亮度为基准（TargetGray）的方式进行标定。</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-3F6647C1-90FF-4523-AA2E-224A358B2BCA"><!-- --></a>目标亮度</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">设置目标亮度值，范围为0~255。<span class="keyword parmname">标定方式</span>选择TargetGray时，才会显示此参数。</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-D1B163DF-E32A-46C6-BD78-1DC5E5307455"><!-- --></a>宽度分块数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">在水平方向对图像进行分割，决定标定的精度，数值越大，精度越高。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-C4D7FF72-37FA-4CFC-A101-8A8040DFB706"><!-- --></a>高度分块数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">在垂直方向对图像进行分割，决定标定的精度，数值越大，精度越高。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__FIG_UDF_BNY_SWB">
+                
+                <img class="image" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__IMAGE_VDF_BNY_SWB" src="GUID-EF22522D-3C48-4B7A-A714-0F1626A77262-high.png" width="1000" />
+            <span class="figcap">图 1 LSC标定参数</span></div>
+
+        </div>
+
+        <div class="section" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-CAAF6C68-574C-4119-96EB-64E9DA944C93"><h2 class="title sectiontitle">校正参数</h2>
+            
+            <p class="p">LSC校正参数如下：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__GUID-06DB48A5-8B7D-4F4D-9C4B-504AB82A0EBC"><!-- --></a>LSC标定系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">算法根据标定参数自动生成，可直接用于图像校正。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__FIG_JFY_TYF_5QB">
+                
+                <img class="image" id="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465__IMAGE_Y5B_4RR_YQB" src="GUID-505F4771-E758-48B9-90BD-358865D548AE-high.png" width="1000" />
+            <span class="figcap">图 2 LSC校正参数</span></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html">算法模块介绍</a></span><ul class="nav nav-list"><li class="active"><span class="topicref">镜头阴影校正</span></li><li><span class="topicref"><a href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html">图像降噪</a></span></li><li><span class="topicref"><a href="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html">色彩插值</a></span></li><li><span class="topicref"><a href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html">色彩校正</a></span></li><li><span class="topicref"><a href="GUID-90089F44-464C-4842-839D-039C49D1D22A.html">图像增强</a></span></li><li><span class="topicref"><a href="GUID-877A08D7-B3A2-4120-9B97-DA0687A1492B.html">图像缩放</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

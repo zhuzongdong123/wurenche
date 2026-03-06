@@ -1,0 +1,321 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="GenTL管理" /><meta name="abstract" content="GenTL标准可提供一个统一的接口，使得客户端在不依赖于底层传输技术的情况下，也能连接相机（包括其他厂商的相机）、与相机通信，甚至直接获取相机采集的数据。" /><meta name="description" content="GenTL标准可提供一个统一的接口，使得客户端在不依赖于底层传输技术的情况下，也能连接相机（包括其他厂商的相机）、与相机通信，甚至直接获取相机采集的数据。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF" /><meta name="DC.Language" content="zh-CN" /><title>GenTL管理</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">GenTL管理</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">GenTL标准可提供一个统一的接口，使得客户端在不依赖于底层传输技术的情况下，也能连接相机（包括其他厂商的相机）、与相机通信，甚至直接获取相机采集的数据。</p>
+
+<ol class="ol steps" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-5B902484-00AF-4C08-BE5B-096368BB41A4"><li class="li step stepexpand" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-E5E45578-1B32-4E50-9546-4E208A819066">
+                <span class="ph cmd">开启cti默认路径，具体介绍请见<a class="xref" href="GUID-C44C7951-A5FE-49D8-8AD3-89EE94247AFA.html#GUID-C44C7951-A5FE-49D8-8AD3-89EE94247AFA" title="通用包含文件夹命名规则和cti默认路径的相关设置，如下图所示。">通用</a>章节。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-ACD9E8AB-083E-41AE-B511-4631C290EE33">
+                <span class="ph cmd">单击控制工具条的<img class="image icon" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_DQH_NFF_5QB" src="GUID-07DF431D-A701-42DF-B063-517E130FF1BC-high.png" />打开设备列表。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-E6EBC018-591B-4D88-BBA8-8E041C6EFC91">
+                <span class="ph cmd">单击设备列表右侧的<img class="image icon" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_SYB_RFF_5QB" src="GUID-B76DD606-B5BB-4178-8613-FD0EB76BB6C5-high.png" />，设备列表将显示加载默认路径下cti文件能搜索到的设备。</span>
+                <div class="itemgroup info">
+                    <p class="p">ISPTool支持使用<span class="ph">MVS </span>客户端提供的cti文件，加载路径分为以下两种情况：</p>
+
+                    <ul class="ul" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__UL_ZFY_F2N_YWB">
+                        <li class="li" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-33A7E97E-F230-4469-A306-EE93754B3F46">
+                            <p class="p">若<span class="ph">MVS </span>安装时为默认路径，则ci文件加载路径为C:\Program Files (x86)\Common
+                                    Files\<span class="ph">MVS </span>\Runtime。</p>
+
+                        </li>
+
+                        <li class="li" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-349E7DCF-4D6A-4783-9C91-6E64FB02F0B3">
+                            <p class="p">若<span class="ph">MVS </span>安装时为自定义路径，则可进入<span class="ph">MVS </span>安装路径下的Runtime文件夹中获取cti文件。</p>
+
+                        </li>
+
+                    </ul>
+
+                    <p class="p">支持的cti文件介绍如下表所示：</p>
+
+                    
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__TABLE_HGD_XLB_DZB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 cti文件介绍</span></caption>
+                            
+                            
+                            <thead class="thead" align="left">
+                                <tr>
+                                    <th class="entry" valign="top" width="50%" id="d6172e99">
+                                        <p class="p">文件名称</p>
+
+                                    </th>
+
+                                    <th class="entry" valign="top" width="50%" id="d6172e105">
+                                        <p class="p">设备类型</p>
+
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody class="tbody">
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvFGProducerCML.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">Camera Link采集卡</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvFGProducerCXP.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">CoaXPress采集卡</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvFGProducerGEV.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">GigE采集卡</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvFGProducerXoF.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">XoF自研协议采集卡</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvProducerGEV.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">标准网卡</p>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="entry" valign="top" width="50%" headers="d6172e99 ">
+                                        <p class="p">MvProducerU3V.cti</p>
+
+                                    </td>
+
+                                    <td class="entry" valign="top" width="50%" headers="d6172e105 ">
+                                        <p class="p">USB接口</p>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                    <div class="note note" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-44E9834C-0972-404F-85DA-17FCA29BA9DD"><span class="notetitle">说明</span> 
+                        <p class="p">ISPTool也支持使用其他厂商的cti文件（符合GenTL标准即可），其他厂商的cti文件请自行获取。若打开cti文件异常，请联系提供厂商获得支持。</p>
+
+                    </div>
+
+                </div>
+                <div class="itemgroup stepresult">
+                    <p class="p">此时设备列表的GenTL会显示加载该cti文件能搜索到的设备并可进行相关操作，如下图所示。</p>
+
+                    <div class="fig fignone" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__FIG_YRJ_YPG_5WB">
+                        
+                        <img class="image" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_ZRJ_YPG_5WB" src="GUID-856B0458-6F8F-42F9-95E0-EBEBF2696EAC-high.png" width="1000" />
+                    <span class="figcap">图 1 显示相机</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-DDDE8C9B-738D-4E79-807F-5B28E8536693"><strong>可选操作： </strong>
+                <span class="ph cmd">加载cti文件后，可通过设备列表右侧的<img class="image icon" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_FBJ_RLH_5QB" src="GUID-B76DD606-B5BB-4178-8613-FD0EB76BB6C5-high.png" />进行手动刷新。</span>
+            </li>
+</ol>
+
+        <div class="section result" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__GUID-00AEC964-2229-49C0-9C7E-88C9B34DF4A1">
+            <p class="p">对于不同状态的GenTL相机，设备列表的相机图标有所差别。GenTL相机的状态说明请见下表。</p>
+
+            
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__TABLE_KMK_GWT_BKB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 GenTL相机状态介绍</span></caption>
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="10.626992561105206%" id="d6172e262">
+                                <p class="p">图标</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="19.02231668437832%" id="d6172e268">
+                                <p class="p">状态</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="70.35069075451648%" id="d6172e274">
+                                <p class="p">含义</p>
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="10.626992561105206%" headers="d6172e262 ">
+                                <p class="p"><img class="image icon" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_NCN_BXT_BKB" src="GUID-B76CBDF7-A0A7-4E3D-9184-78469FF4B53B-high.png" /></p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="19.02231668437832%" headers="d6172e268 ">
+                                <p class="p">可用</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="70.35069075451648%" headers="d6172e274 ">
+                                <p class="p">相机处于可连接状态，双击相机可以正常连接和使用。</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="10.626992561105206%" headers="d6172e262 ">
+                                <p class="p"><img class="image icon" id="GUID-4DC0D24E-1CFF-4922-B956-AF35AAD320AF__IMAGE_DPY_CXT_BKB" src="GUID-7DD0F798-963C-477B-B42C-D3DD5C58552E-high.png" /></p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="19.02231668437832%" headers="d6172e268 ">
+                                <p class="p">已连接</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="70.35069075451648%" headers="d6172e274 ">
+                                <p class="p">客户端已连接该相机并可以进行相关操作。</p>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+        </div>
+
+</div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html">相机管理</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE.html">网口相机管理</a></span></li><li><span class="topicref"><a href="GUID-B8DE0282-164E-4705-B4C3-FE18D081E065.html">U3V相机管理</a></span></li><li class="active"><span class="topicref">GenTL管理</span></li><li><span class="topicref"><a href="GUID-0AF1B44B-BBA1-47D3-BACF-7DDF4118CD0B.html">相机属性树</a></span></li><li><span class="topicref"><a href="GUID-FE345ED7-7AE0-4EDA-AC13-7889CCAEEC1E.html">开启预览</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

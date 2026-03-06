@@ -1,0 +1,178 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+		/** * flmeng : If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive */ 
+		var actualLocation = window.location.href; 
+		var newLocation; 
+		if (actualLocation.indexOf('/#')!=-1) {
+			newLocation = actualLocation.replace(/\/#/g, "/"); 
+			window.location.replace(newLocation); 
+		} 
+		if (actualLocation.match(/\/index\.(.*)#/gi)!=null) { 
+			newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/"); 
+			window.location.replace(newLocation); 
+		}  function debug(msg, object){ 
+			console.log(msg, object); 
+		} function executeQuery(){ 
+			$('#searchForm').submit(); 
+			return true; 
+		}
+		</script>
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/index.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- get publication title -->
+		<title>Hikrobot PCIe Diagnostic Tool</title>
+		<!-- <whc:include_html href="${webhelp.fragment.head}"/> -->
+	</head>
+	<body class="wh_main_page">
+		<div class="bodywrapper">
+			
+			<!-- navbar webhelp.fragment.before.body -->
+			 
+<nav class="navbar navbar-default hikwh_headerlogo">
+	<div class="container">
+		<div class="wh_header_flex_container">
+			<div class="wh_logo_and_publication_title_container">
+				<div class="wh_logo_and_publication_title">
+					<!--<whc:include_html href="${webhelp.fragment.before.logo_and_title}"/>-->
+					<!-- This component will be generated when the next parameters are specified in the transformation scenario: 'webhelp.logo.image' and 'webhelp.logo.image.target.url'. See: http://daksys.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html. -->
+					
+					<div class="wh_website">
+						<!-- <whc:webhelp_top_website /> -->
+					</div>
+					<div class="wh_log_div">
+						<!--UDCode:UD12345B--><a href="index.html" class=" wh_logo"><img src="daksys-webhelp/resources/img/hikrobot_logo.png" alt="'hikrobot'" /></a>
+					</div>
+					<!-- <whc:include_html href="${webhelp.fragment.after.logo_and_title}"/>-->
+					<div class="wh_download_top_menu">
+						<a href="Hikrobot PCIe Diagnostic Tool_User Manual_4.4.0_20240816.pdf"><img src="download_white.png" alt="download" class="wh_download_white" /><img src="download_black.png" alt="download" class="wh_download_black" /></a>
+						<!-- menu button -->
+						<button type="button" data-target=".wh_top_menu_and_indexterms_link" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div style="" class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+				<!-- 手机 顶部菜单-->
+				
+				<div class=" wh_top_menu "><ul><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8.html" data-id="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8">Legal Information</a></span></li><li class=" has-children "><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086.html" data-id="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086">Disclaimer</a></span><ul><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-E89A10BD-DB4F-4A6D-9C74-6856A8AEB593.html" data-id="GUID-E89A10BD-DB4F-4A6D-9C74-6856A8AEB593">Get Support</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-BECF4D61-236C-41D2-A2EE-D7196A931292.html" data-id="GUID-BECF4D61-236C-41D2-A2EE-D7196A931292">Symbol Conventions</a></span></li></ul></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF.html" data-id="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF">Release Notes</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-78960A6F-25D3-441E-8805-6798597D86A6.html" data-id="GUID-78960A6F-25D3-441E-8805-6798597D86A6">Tool Introduction</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873.html" data-id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873">Diagnostic Monitoring</a></span></li></ul></div>
+				
+				
+			</div>
+		</div>
+	</div>
+</nav>
+<nav class="navbar navbar-default hikwh_header">
+	<div class="container">
+		<div class="wh_header_flex_container">
+			<div class="wh_logo_and_publication_title_container" style="display:block; margin:auto ">
+				<div class="wh_logo_and_publication_title">
+					<div class=" hikwh_publication_title "><a href="index.html" style="display:inline">Hikrobot PCIe Diagnostic Tool</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+			<!-- Search form -->
+			<div class=" hikwh_search_input navbar-form wh_main_page_search " role="form">
+				
+				<form id="searchForm" method="get" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div></form>
+				
+			<div id="hkws_analytics"></div></div>
+		</div>
+		<div class="hikwh_content_area" id="content_area">
+			
+			<!-- 手机首页 -->
+			<div class="container wh_content_mobile_container container_mobile" style="display: none;">
+				<!-- 手机菜单 -->
+				<ul id="mobile_menu" class="wh_tile_list">
+					<li class="wh_tile_title">
+							<span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8.html" data-id="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8">Legal Information</a></span>
+						</li><li class="wh_tile_title">
+							<span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086.html" data-id="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086">Disclaimer</a></span>
+						</li><li class="wh_tile_title">
+							<span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF.html" data-id="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF">Release Notes</a></span>
+						</li><li class="wh_tile_title">
+							<span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-78960A6F-25D3-441E-8805-6798597D86A6.html" data-id="GUID-78960A6F-25D3-441E-8805-6798597D86A6">Tool Introduction</a></span>
+						</li><li class="wh_tile_title">
+							<span class="topicref"><a href="javascript:void(0);" onclick="openTopicInMobileFrame($(this))" data-href="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873.html" data-id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873">Diagnostic Monitoring</a></span>
+						</li>
+					<!-- This is the placeholder for the main page entries presented in a tree-like fashion. -->
+					<!-- <whc:webhelp_mobile_main_page_toc/> -->
+					
+				</ul>
+				<iframe id="frame_mobile" style="width:100%;height:100%;border:none;outline:none;"></iframe>
+			</div>
+			<!-- PC -->
+			<div class="container wh_content_flex_container container_desktop" style="display: none;">
+				<div class="desktop_left col-sm-3">
+					<div style="display:inline-block;height:30px;padding-left:24px;"><a href="javascript:expandMenu();">Expand</a></div><div style="display:inline-block;height:30px;padding-left:24px;"><a href="javascript:collapseMenu();">Collapse</a></div><div class="desktop_left_menu_ul"><ul class=" menu_ul menu_ul_1 "><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8.html" data-id="GUID-49D55A7D-A6F0-42CB-9022-C9BA325860F8">Legal Information</a></span></li><li class=" li_has_children li_close "><span class="topicref"><span class="li_before"></span><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086.html" data-id="GUID-F24A19BD-F61B-4E2E-AA94-9CCFE2D77086">Disclaimer</a></span><ul class=" menu_ul menu_ul_2 "><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-E89A10BD-DB4F-4A6D-9C74-6856A8AEB593.html" data-id="GUID-E89A10BD-DB4F-4A6D-9C74-6856A8AEB593">Get Support</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-BECF4D61-236C-41D2-A2EE-D7196A931292.html" data-id="GUID-BECF4D61-236C-41D2-A2EE-D7196A931292">Symbol Conventions</a></span></li></ul></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF.html" data-id="GUID-9329B7E1-8C72-40F2-9F29-96547F4726FF">Release Notes</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-78960A6F-25D3-441E-8805-6798597D86A6.html" data-id="GUID-78960A6F-25D3-441E-8805-6798597D86A6">Tool Introduction</a></span></li><li><span class="topicref"><a href="javascript:void(0);" onclick="openTopicInDesktopFrame($(this))" data-href="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873.html" data-id="GUID-5E0273D2-BBB1-4722-A8DD-E5FBE2B8B873">Diagnostic Monitoring</a></span></li></ul></div>				
+				</div>
+				<div class="desktop_right col-sm-9">
+					<!-- PC 正文-->
+					<iframe id="frame_desktop" onload="iframeOnload()" allowfullscreen="true" style="width:100%;height:calc(100% - 55px );border:none;outline:none;"></iframe>
+				</div>
+			</div>
+		</div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+	<!--Copyright-->
+    © Hangzhou Hikrobot Co., Ltd. All rights reserved.<!-- BnStar No42 -->
+  </div>
+</nav>
+<div class="menu-tempdiv hidden"></div>
+ <!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_index.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_default.js?buildId=2017042020"></script>
+		
+		<!-- Search autocomplete -->
+		<script type="text/javascript" src="daksys-webhelp/search/keywords.js?uniqueId=20240816054252">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/search/searchAutocomplete.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/search/searchHistoryItems.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/search/searchOptions.js?uniqueId=20240816054252">
+			<!---->
+		</script>
+	</body>
+</html>

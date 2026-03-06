@@ -1,0 +1,168 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="CLUT" /><meta name="abstract" content="CLUT是一个三维的颜色查找表，可以针对特定的颜色进行调整，同时不影响其他颜色。" /><meta name="description" content="CLUT是一个三维的颜色查找表，可以针对特定的颜色进行调整，同时不影响其他颜色。" /><meta name="DC.Relation" scheme="URI" content="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600" /><meta name="DC.Language" content="zh-CN" /><title>CLUT</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">CLUT</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">CLUT是一个三维的颜色查找表，可以针对特定的颜色进行调整，同时不影响其他颜色。</p>
+
+        <p class="p">使用CLUT模块时需要进行标定和校正。</p>
+
+        <div class="section" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-A98461A9-FAD7-45AE-8CDE-FD64A9379B49"><h2 class="title sectiontitle">标定参数</h2>
+            
+            <p class="p">CLUT标定需要导入一张参考图，并对校正前图像和参考图绘制ROI，还需对以下参数进行设置：</p>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-A6FEEC02-5499-41DF-BF1C-E48C35DE542F"><!-- --></a>ROI绘制</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">根据图片场景不同，有24色卡ROI、140色卡ROI及自由ROI三种方式可选，具体介绍请参考<a class="xref" href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html#GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998" title="图像降噪算法模块可去除图像中的噪声，提高图像信噪比。">图像降噪</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-64D1192D-95F1-4AC0-A507-C212F8B39C7E"><!-- --></a>使用输入颜色</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">参数具体介绍请参考<a class="xref" href="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2.html#GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2" title="CCM是一个3*3的色彩校正矩阵，可调整RGB中红、绿、蓝三色分量的比例关系。">CCM</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-1DE108A2-1A44-4A3D-8072-B60FFC15E3DB"><!-- --></a>Gamma类型</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">参数具体介绍请参考<a class="xref" href="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2.html#GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2" title="CCM是一个3*3的色彩校正矩阵，可调整RGB中红、绿、蓝三色分量的比例关系。">CCM</a>章节。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-E6B8AE7A-3859-4FB5-9C50-F224CEFF1644"><!-- --></a>量化系数</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">可将CLUT矩阵中的数值整数化，便于进行运算。</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-7A111731-2F27-4DA6-8C87-BF6501C32EC0"><!-- --></a>平滑因子</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">设置数值大小将影响CLUT校正的范围。</p>
+
+                    </dd>
+
+                
+            </dl>
+
+            <div class="fig fignone" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__FIG_EBV_YFF_TWB">
+                
+                <img class="image" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__IMAGE_FBV_YFF_TWB" src="GUID-96F2EDAE-FABB-4727-A872-B36E52AA2185-high.png" width="1000" />
+            <span class="figcap">图 1 CLUT标定参数</span></div>
+
+        </div>
+
+        <div class="section" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__GUID-192E35AE-E236-4953-BEAA-364393B09258"><h2 class="title sectiontitle">校正参数</h2>
+            
+            <p class="p">校正参数处可以对Gamma类型进行调整，具体方法与标定参数中相同。</p>
+
+            <div class="fig fignone" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__FIG_JHM_FDG_5QB">
+                
+                <img class="image" id="GUID-A9BE6EE8-D105-4A03-9F64-49292549E600__IMAGE_CHT_GDG_5QB" src="GUID-86AF0C54-4305-4C5A-9589-317380E7FFE9-high.png" width="1000" />
+            <span class="figcap">图 2 CLUT校正参数</span></div>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-4175955D-4EA6-459D-B215-E80FAB72DDB3.html">算法模块介绍</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-1FC3371B-199A-4585-AFF1-8E2B660EB465.html">镜头阴影校正</a></span></li><li><span class="topicref"><a href="GUID-F7EBCC11-8ED7-4DC2-9045-2BBB9A22D998.html">图像降噪</a></span></li><li><span class="topicref"><a href="GUID-CAA021A1-047F-4B1A-899A-243A2D55793F.html">色彩插值</a></span></li><li><span class="topicref"><a href="GUID-0C77D89C-EB2E-4A03-869F-C7B5FD39E48E.html">色彩校正</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-CDC040EC-47CB-4680-A8BF-571B4AB9ED37.html">白平衡</a></span></li><li><span class="topicref"><a href="GUID-BF042E10-B3CD-407E-ACAC-6094D6DF7ED2.html">CCM</a></span></li><li><span class="topicref"><a href="GUID-4149592E-60AC-4C07-BF47-0F080AECB657.html">超级调色盘</a></span></li><li class="active"><span class="topicref">CLUT</span></li><li><span class="topicref"><a href="GUID-AA075CEE-5231-4520-B280-DB9CAA81CC34.html">去紫边</a></span></li><li><span class="topicref"><a href="GUID-C821D92B-09A2-4C96-A5AE-BC1E2D506E86.html">Gamma</a></span></li></ul></li><li><span class="topicref"><a href="GUID-90089F44-464C-4842-839D-039C49D1D22A.html">图像增强</a></span></li><li><span class="topicref"><a href="GUID-877A08D7-B3A2-4120-9B97-DA0687A1492B.html">图像缩放</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

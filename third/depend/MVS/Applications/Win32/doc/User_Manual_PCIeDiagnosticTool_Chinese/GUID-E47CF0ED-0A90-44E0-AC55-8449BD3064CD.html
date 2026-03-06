@@ -1,0 +1,365 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="工具介绍" /><meta name="abstract" content="PCIe诊断工具（本手册简称为“工具”）可对采集卡调试状态信息的内存值进行实时读取。" /><meta name="description" content="PCIe诊断工具（本手册简称为“工具”）可对采集卡调试状态信息的内存值进行实时读取。" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD" /><meta name="DC.Language" content="zh-CN" /><title>工具介绍</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">工具介绍</h1>
+
+    
+<div class="body conbody"><p class="shortdesc">PCIe诊断工具（本手册简称为“工具”）可对采集卡调试状态信息的内存值进行实时读取。</p>
+
+        <p class="p">工具支持的采集卡类型请见下表：</p>
+
+        
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__TABLE_AM3_GD3_WWB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 1 支持采集卡类型</span></caption>
+                
+                
+                <thead class="thead" align="left">
+                    <tr>
+                        <th class="entry" valign="top" width="36.66666666666667%" id="d881e34">
+                            <p class="p">采集卡类型</p>
+
+                        </th>
+
+                        <th class="entry" valign="top" width="63.33333333333334%" id="d881e40">
+                            <p class="p">采集卡接口</p>
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="tbody">
+                    <tr>
+                        <td class="entry" valign="top" width="36.66666666666667%" headers="d881e34 ">
+                            <p class="p">图像采集卡</p>
+
+                        </td>
+
+                        <td class="entry" valign="top" width="63.33333333333334%" headers="d881e40 ">
+                            <p class="p">Camera Link采集卡、CoaXPress采集卡、GigE采集卡、10
+                                GigE采集卡（部分型号支持）、XoFLink光口采集卡</p>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+<div class="p">通过工具不同区域可进行相应操作，主界面如下图所示，相关说明请见下表。<div class="fig fignone" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__FIG_FJF_Q4H_5WB">
+                
+                <img class="image" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__IMAGE_XFT_VQZ_JCC" src="GUID-7A38132F-684A-45FC-AF66-83BFAA162D9D-high.png" width="2100" />
+            <span class="figcap">图 1 主界面</span></div>
+</div>
+
+        <div class="p">
+            
+<table cellpadding="4" cellspacing="0" summary="" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__TABLE_BR3_S4H_5WB" class="table" frame="border" border="1" rules="all"><caption><span class="tablecap">表 2 主界面说明</span></caption>
+                    
+                    
+                    
+                    <thead class="thead" align="left">
+                        <tr>
+                            <th class="entry" valign="top" width="8.216926869350862%" id="d881e97">
+                                <p class="p">序号</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="15.119145439605589%" id="d881e103">
+                                <p class="p">区域</p>
+
+                            </th>
+
+                            <th class="entry" valign="top" width="76.66392769104355%" id="d881e109">
+                                <p class="p">说明</p>
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="entry" valign="top" width="8.216926869350862%" headers="d881e97 ">
+                                <p class="p">1</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="15.119145439605589%" headers="d881e103 ">
+                                <p class="p">菜单栏</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="76.66392769104355%" headers="d881e109 ">
+                                <div class="p">菜单栏可提供数据文件进行导入/导出和帮助操作。<ul class="ul" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__UL_U3L_CPV_WWB">
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-B4945727-651F-4886-9D63-60B21CC75961">
+                                            <p class="p">文件：支持将外部数据文件进行导入或将诊断文件进行导出操作；</p>
+
+                                            <div class="p">
+                                                <ul class="ul" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__UL_YBK_3QM_WWB">
+                                                  <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-9190CFA0-763C-49DA-AA2B-8BC6AB50DCFA">
+                                                  <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导入</span></span>，将外部数据文件导入至工具；</p>
+
+                                                  </li>
+
+                                                  <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-0C67BF86-CFD1-42FC-886D-FC33DCD03608">
+                                                  <p class="p">单击<span class="ph menucascade"><span class="ph uicontrol">文件</span> &gt; <span class="ph uicontrol">导出</span></span>，将诊断文件导出至本地。</p>
+
+                                                  </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-CED6040A-EA75-49E5-8E34-D891708DD4F0">
+                                            <p class="p">设置：可对诊断文件的导出进行相关配置；</p>
+
+                                            <ul class="ul" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__UL_OYQ_WYB_5XB">
+                                                <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-C3F6A869-825F-4870-B304-D60C3DA9678E">
+                                                  <p class="p"><span class="keyword parmname">自动导出</span>：使能后，诊断文件将自动导出。</p>
+
+                                                </li>
+
+                                                <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-1D5C97A1-08A3-4B4A-BD71-921F796265DD">
+                                                  <p class="p"><span class="keyword parmname">导出路径</span>：可配置诊断文件的自动导出路径。</p>
+
+                                                </li>
+
+                                                <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-5A26A5FD-B564-4643-B0E7-0FA18E17D4AA">
+                                                  <p class="p"><span class="keyword parmname">文件个数</span>：可配置自动导出的诊断文件个数。</p>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-9E79A249-5110-4F8A-917A-A0D3FCEC93ED">
+                                            <p class="p">帮助：可对工具的语言（中英文）进行选择，查看本用户手册和工具版本信息。</p>
+
+                                        </li>
+
+                                    </ul>
+</div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="8.216926869350862%" headers="d881e97 ">
+                                <p class="p">2</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="15.119145439605589%" headers="d881e103 ">
+                                <p class="p">采集卡设置</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="76.66392769104355%" headers="d881e109 ">
+                                <div class="p">通过采集卡设置区域，可选择相应采集卡并进行实时采集，可对如下相关内容进行设置：<ul class="ul" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__UL_VNZ_CRH_5WB">
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-AC6D87D8-5B10-4C96-A3A0-7560C90FA589">
+                                            <p class="p"><img class="image" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__IMAGE_FPD_PRH_5WB" src="GUID-DD417A08-2461-451F-87D7-9D483C067086-high.png" />：刷新采集卡；</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-A9E1DA19-896D-4CD3-9A48-BBBF15973178">
+                                            <p class="p"><img class="image" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__IMAGE_A5D_5RH_5WB" src="GUID-7F3C029A-6E56-4DD6-A60E-FE934780BFA2-high.png" />：查看采集卡信息；</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-0A85EC15-FFBE-46A0-9AA3-75E227976DE5">
+                                            <p class="p"><img class="image" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__IMAGE_NZQ_TRH_5WB" src="GUID-FFCCA9E7-5EB3-4F1C-99A9-E2B1BCD50CEA-high.png" />：查看内存和CPU利用率；</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-87D506BE-25F6-4EBA-84A2-21730A80FF45">
+                                            <p class="p"><span class="keyword parmname">XoFLink</span>：当采集卡为XoFLink协议采集卡时，需进行勾选。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-4B48E37A-B6EE-45C7-B98B-2DFD08ADB187">
+                                            <p class="p"><span class="keyword parmname">刷新间隔</span>：开始采集后，调试状态信息数据刷新的间隔时间，单位为“ms”，建议使用默认时间，即5000ms。</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-ED54ED90-42D3-40C6-89F5-7BC701A40E16">
+                                            <p class="p"><span class="keyword parmname">值显示进制</span>：调试状态信息进制值显示，可选<span class="ph uicontrol">二进制</span>、<span class="ph uicontrol">十进制</span>和<span class="ph uicontrol">十六进制</span>。</p>
+
+                                        </li>
+
+                                    </ul>
+</div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="8.216926869350862%" headers="d881e97 ">
+                                <p class="p">3</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="15.119145439605589%" headers="d881e103 ">
+                                <p class="p">诊断监视</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="76.66392769104355%" headers="d881e109 ">
+                                <p class="p">通过诊断监视区域可对采集卡PCIe调试状态信息的内存值进行实时监视，具体请见<a class="xref" href="GUID-DA43BB77-9BAD-4DB7-BB55-5641DC0179A1.html#GUID-DA43BB77-9BAD-4DB7-BB55-5641DC0179A1" title="通过连接采集卡并进行采集，可实时查看采集卡PCIe调试状态信息的内存值。">诊断监视</a>章节。</p>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry" valign="top" width="8.216926869350862%" headers="d881e97 ">
+                                <p class="p">4</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="15.119145439605589%" headers="d881e103 ">
+                                <p class="p">线路状态监测</p>
+
+                            </td>
+
+                            <td class="entry" valign="top" width="76.66392769104355%" headers="d881e109 ">
+                                <p class="p">可对采集卡的线路状态、图像行高等进行实时监测。</p>
+
+                                <p class="p">通过在<span class="keyword parmname">选择线路</span>处选择Stream *，可对该线路的取流状态、FG丢帧计数、
+                                    PKT帧开始/结束计数的值进行实时查看。</p>
+
+                                <div class="p">
+                                    <ul class="ul" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__UL_ADB_QQH_5WB">
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-6CAA46AD-C352-43E0-ACB9-7117C52BDF55">
+                                            <p class="p">取流状态： 表示采集卡的取流状态。“0”表示未取流，“1”表示取流；</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-303349D4-CF3C-481D-9AF3-94582CB2868A">
+                                            <p class="p">FG丢帧计数：采集卡丢图计数；</p>
+
+                                        </li>
+
+                                        <li class="li" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-B825EC28-93AA-411F-B2EC-67CE66347463">
+                                            <p class="p">PKT帧开始/结束计数：最初/最终传输至PC端的图像数。</p>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="p">
+                                    <div class="note note" id="GUID-E47CF0ED-0A90-44E0-AC55-8449BD3064CD__GUID-15B10A39-3821-4C6F-B482-1C37CAAA4FE3"><span class="notetitle">说明</span> 
+                                        <p class="p">采集卡接口类型不同，显示的界面有所差别，请以实际显示为准。</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+
+        </div>
+
+</div>
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

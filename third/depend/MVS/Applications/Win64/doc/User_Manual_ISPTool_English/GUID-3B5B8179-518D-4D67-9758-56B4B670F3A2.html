@@ -1,0 +1,363 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="en-us" lang="en-us">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2005" /><meta name="DC.rights.owner" content="(C) Copyright 2005" /><meta name="DC.Type" content="concept" /><meta name="DC.Title" content="CCM" /><meta name="abstract" content="CCM (color correction matrix) supports correcting the image by local parameters or correcting the image by calibration parameters." /><meta name="description" content="CCM (color correction matrix) supports correcting the image by local parameters or correcting the image by calibration parameters." /><meta name="DC.Relation" scheme="URI" content="GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2" /><meta name="DC.Language" content="en-US" /><title>CCM</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">en-US</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="Hikrobot" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    
+    <h1 class="title topictitle1">CCM</h1>
+
+    
+    
+    <div class="body conbody"><p class="shortdesc">CCM (color correction matrix) supports correcting the image by local
+        parameters or correcting the image by calibration parameters.</p>
+
+        <div class="section" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-46BB2A62-D37A-4A95-A335-94980ABB9CC8"><h2 class="title sectiontitle">Calibration Parameters</h2>
+            
+            
+            <p class="p">Click <span class="keyword parmname">24 ROI</span>, draw the ROI on the
+                picture, and set <span class="keyword parmname">ROI Width</span> and <span class="keyword parmname">ROI Height</span> to adjust the ROI.</p>
+
+            
+            <div class="fig fignone" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__FIG_K35_4CT_5QB">
+                
+                
+                <img class="image" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__IMAGE_YYQ_J5N_FZB" height="1417" src="GUID-D73D092B-2BD5-4AE1-A00A-C6FDCCD1BBDE-high.png" />
+                
+            <span class="figcap">Figure 1 Calibration Parameters</span></div>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-A9AC835F-89EA-4443-A1A9-B08169A880E7"><!-- --></a>Draw ROI</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">The Software provides two types of ROI, you can select
+                            according to their actual needs.</p>
+
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-7830C100-F8C0-4807-A2B3-E0EB7F28466E"><!-- --></a><img class="image icon" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__IMAGE_Z4B_3J5_5QB" src="GUID-7F5E5E0B-1711-4289-B2C3-00BC064FB85A-high.png" />24 ROIs</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">An ROI consists of 24 small ROIs in 6*4
+                                        format.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-00557E79-DA39-4A22-8769-076AF00A31EC"><!-- --></a><img class="image icon" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__IMAGE_JVB_JJ5_5QB" src="GUID-EEC207D4-386E-4BE3-A1CA-37BCABC0009E-high.png" />140 ROIs</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">An ROI consists of 140 small ROIs in 14*10
+                                        format.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-6A2D7252-3E9C-4260-846A-B954DD20E2D7"><!-- --></a>ROI Width/Height</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">The width or height of a small ROI in the 24 ROIs and 140
+                            ROIs. When the size of 24 ROIs and 140 ROIs changes, the gap between
+                            each small ROI will also change but the width and height of the small
+                            ROIs will not change.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-B74DA8F1-AB46-421B-A666-75A332232F83"><!-- --></a>Gamma Type</dt>
+
+                    <dd class="dd pd">
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-023BAAC2-31E6-48BA-A208-B5A9C7F7711D"><!-- --></a>None</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Disable Gamma.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-3D3BE65C-0ABB-45B3-AAAA-3B1C4BC1377D"><!-- --></a>User Value</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Customize
+                                        the value of Gamma.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-E33EEE04-1523-40AA-BA7E-A64BBDD8A243"><!-- --></a>User Curve</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Import
+                                        a Gamma curve file into the Software.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-E5E50560-1BB3-4865-ABE0-AD3556228CFA"><!-- --></a>LRGB2SRGB</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The value of Gamma is generated by the
+                                        Software's algorithm.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-E9EF9CEA-82E1-4274-AFCC-24427A75391D"><!-- --></a>Gamma Value</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">If you select <span class="keyword parmname">User Value</span>
+                            as the Gamma type, you should enter the Gamma value here. The value
+                            should range from 0.1 to 3.9.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-F51D6DA2-18B9-4D72-A08E-4F638EDD4BAC"><!-- --></a>Gamma Curve</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">If you select <span class="keyword parmname">User Curve</span>
+                            as the Gamma type, you should click <span class="ph uicontrol">Import</span> to
+                            import a local Gamma curve file into the Software.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-11141AC2-D484-4BA3-ABF7-6A61E9DFDD0A"><!-- --></a>White Balance</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">If you enable this, the Software will adjust the white
+                            balance of the image automatically.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-004EC3F6-22E2-41DE-8A81-7F9DB0614E63"><!-- --></a>Color Weight</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">Click <span class="ph uicontrol">Edit</span> to edit the weight of
+                            different colors.</p>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+        <div class="section" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-88C5D511-9ABC-4757-B9E0-C6E1871CD158"><h2 class="title sectiontitle">Correction Parameters</h2>
+            
+            <div class="fig fignone" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__FIG_ZRD_YHT_5QB">
+                
+                
+                <img class="image" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__IMAGE_HNX_P5N_FZB" height="1417" src="GUID-75EE8E5F-2378-4E99-9C3C-496D4CEDF874-high.png" />
+                
+            <span class="figcap">Figure 2 Correction Parameters</span></div>
+
+            <dl class="dl parml">
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-98CC746E-910A-4C88-9300-8924D5AFFF51"><!-- --></a>Gamma Type</dt>
+
+                    <dd class="dd pd">
+                        <dl class="dl parml">
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-95C2931A-0FB7-45BF-961B-524F619C54AC"><!-- --></a>None</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Disable Gamma.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-44AAD0D9-D300-45CC-AF33-4D81EEA34C23"><!-- --></a>User Value</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Customize
+                                        the value of Gamma.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-01681757-D398-4EBD-A9A7-3DA5D0532989"><!-- --></a>User Curve</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">Import
+                                        a Gamma curve file into the Software.</p>
+
+                                </dd>
+
+                            
+                            
+                                <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-387A9352-5D5A-46BD-B842-7817C5E86762"><!-- --></a>LRGB2SRGB</dt>
+
+                                <dd class="dd pd">
+                                    <p class="p">The value of Gamma is generated by the
+                                        Software's algorithm.</p>
+
+                                </dd>
+
+                            
+                        </dl>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-8FF83D87-40D8-4516-8BBF-66C362A1DAFB"><!-- --></a>Scale</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">It changes the values in the CCM matrix into integers for a
+                            quick calculation. After
+                            you
+                            enter the Scale, the values in the CCM matrix will change into
+                            integers.</p>
+
+                    </dd>
+
+                
+                
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-8FEF4DB6-7F82-46AE-ABA3-A87369C848E9"><!-- --></a>CCM Matrix</dt>
+
+                    <dd class="dd pd">
+                        <p class="p">Click <span class="ph uicontrol">Edit</span> to edit the values of R,
+                            G, and B.</p>
+
+                        
+                        <div class="note note" id="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-4E3B5AB4-4BE6-45C2-995F-12DEAFD79691"><span class="notetitle">Note</span> 
+                            <p class="p">If you set the <span class="keyword parmname">Scale</span> to
+                                1, the values of R, B, and G in the <span class="keyword parmname">Matrix</span> can be float numbers.</p>
+
+                        </div>
+
+                        
+                    </dd>
+
+                
+                
+                    
+                    <dt class="dt pt dlterm"><a name="GUID-3B5B8179-518D-4D67-9758-56B4B670F3A2__GUID-A1D2FFF4-C6EC-461C-A6A5-43E0CDD1654F"><!-- --></a>Saturation Enable</dt>
+
+                    
+                    <dd class="dd pd">
+                        <p class="p">After
+                            it is enabled, you cannot edit <span class="keyword parmname">Scale</span> and
+                                <span class="keyword parmname">CCM Matrix</span>. You can drag the
+                            slider to change the saturation of the whole image. When the saturation
+                            changes, the values in the CCM matrix will also change.</p>
+
+                    </dd>
+
+                
+            </dl>
+
+        </div>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-12F30F1F-1DD8-4CF8-9B39-CAECD945EC00.html">Algorithm Introduction</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-50952F87-E453-4F0D-88CD-8096C764ABB7.html">Lens Shading Correction (LSC)</a></span></li><li><span class="topicref"><a href="GUID-021BACE9-DFD0-4C5C-8047-6A45803BD7E5.html">Denoise</a></span></li><li><span class="topicref"><a href="GUID-ED8344D6-4992-4264-AB48-698E7A86834F.html">Bayer Interpolation</a></span></li><li><span class="topicref"><a href="GUID-CE8A3C25-C448-4DAD-9847-A50BC1C5F551.html">Color Correction</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-38A87839-F4F7-4523-94F8-6D9DBD2C0CD2.html">White Balance</a></span></li><li class="active"><span class="topicref">CCM</span></li><li><span class="topicref"><a href="GUID-FB4B01C0-5A1B-4156-B7F1-292A37FFC3AE.html">Super Palette</a></span></li><li><span class="topicref"><a href="GUID-CF327316-43FC-4932-B6A8-1440A363656E.html">CLUT</a></span></li><li><span class="topicref"><a href="GUID-A0CEB8E6-AE59-4DA3-A778-8C7C7382AA8E.html">Purple Fringe</a></span></li><li><span class="topicref"><a href="GUID-0CCBB4AF-257F-437F-873C-3AF1602F8BCB.html">Gamma</a></span></li></ul></li><li><span class="topicref"><a href="GUID-37148F2E-5C98-4B45-BA43-6F29B777666C.html">Image Enhancement</a></span></li><li><span class="topicref"><a href="GUID-BA4CEC61-0817-4924-A2CF-F54A0EB87910.html">Image Scaling</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

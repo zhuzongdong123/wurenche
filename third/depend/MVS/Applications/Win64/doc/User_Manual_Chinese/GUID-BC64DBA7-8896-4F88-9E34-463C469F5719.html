@@ -1,0 +1,164 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.daksys.com/webhelp/components" xml:lang="zh-cn" lang="zh-cn">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) 版权 2005" /><meta name="DC.rights.owner" content="(C) 版权 2005" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="添加虚拟相机" /><meta name="abstract" content="虚拟相机可根据实际需求选择相机型号进行模拟打开操作，通过将本地图片存放至指定路径，使用属性树可对其进行部分参数设置，可实现图像预览和循环播放。" /><meta name="description" content="虚拟相机可根据实际需求选择相机型号进行模拟打开操作，通过将本地图片存放至指定路径，使用属性树可对其进行部分参数设置，可实现图像预览和循环播放。" /><meta name="DC.Relation" scheme="URI" content="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719" /><meta name="DC.Language" content="zh-CN" /><title>添加虚拟相机</title><!--  Generated with dksgen version 19.0, build number 2017042020.  --><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" /><meta name="wh-path2root" content="index.html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/commonltr.css?buildId=2017042020" />
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017042020" />
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="daksys-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="daksys-webhelp/resources/js/jquery-ui.min.css" />
+		<!-- Changes and comments, as side-notes  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/resources/css/p-side-notes.css?buildId=2017042020" />
+		<!-- Template default styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_default.css?buildId=2017042020" />
+		<!-- Expand-collapse support styles  -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/resources/css/wt_expand.css?buildId=2017042020" />
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-3.6.2.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/localization/strings.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/localization.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/parseuri.js?buildId=2017042020">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.cookie.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery-ui.min.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/jquery.highlight-3.js">
+			<!---->
+		</script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/browserDetect.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<script type="text/javascript" src="daksys-webhelp/resources/js/image-resize.js">
+			<!---->
+		</script>
+		<!-- BnStart No37 -->
+		<!-- Skin resources -->
+		<link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/skin.css?buildId=2017042020" /><link rel="stylesheet" type="text/css" href="daksys-webhelp/template/variants/tiles/custom/watermark.css?buildId=2017042020" />
+		<!-- EXM-36950 - Expand the args.hdf parameter here -->
+		
+		<!-- EXM-36950 - webhelp.fragment.head :topic -->
+		
+	</head>
+	<body class="wh_topic_page frmBody" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719" onload="topicOnload()">
+		<!-- get_lang -->
+		<div id="lang" style="display:none">zh-CN</div><div id="mapoutputclass" style="display:none"></div>
+		<input hidden="hidden" id="UDCode" value="UD12345B" /><input hidden="hidden" id="UDTrademark" value="" /><input hidden="hidden" id="Trademark" value="海康机器人" />
+		<div class="content_area" id="content_area">
+			<div id="container_body" class="container">
+				<div id="container_body_right">
+					<div class="row">
+						<div id="contentArea">
+							<div class=" wh_topic_content body ">
+    <h1 class="title topictitle1">添加虚拟相机</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">虚拟相机可根据实际需求选择相机型号进行模拟打开操作，通过将本地图片存放至指定路径，使用属性树可对其进行部分参数设置，可实现图像预览和循环播放。</p>
+
+        <div class="section context" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-A52A66F7-7415-4E1C-B8BC-5127ABE32097">
+            <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CD76A1BD-14FD-4A3A-821D-6668FA366A1C"><span class="notetitle">说明</span> 
+                <p class="p">仅网口面阵相机、U3V面阵相机和网口线阵相机支持添加虚拟相机。</p>
+
+            </div>
+
+        </div>
+
+        <ol class="ol steps" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-E2DA0533-DD03-4578-953B-DD537CD9AF71"><li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-14FA6D8A-54E4-4246-9DBA-73032102A905">
+                <span class="ph cmd">通过客户端的<span class="ph menucascade"><span class="ph uicontrol">工具</span> &gt; <span class="ph uicontrol">虚拟相机工具</span></span>进入，如下图所示。</span>
+                <div class="itemgroup info">
+                    <div class="fig fignone" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__FIG_KJR_V1Q_4SB">
+                        
+                        <img class="image" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_KDQ_HCQ_4SB" src="GUID-E280808C-5F90-47D3-BDC9-A1683D086CC5-high.png" width="1500" />
+                    <span class="figcap">图 1 虚拟相机工具</span></div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-EB21292A-3F48-43B7-866C-C9F2B84778A3">
+                <span class="ph cmd"><span class="ph uicontrol">相机操作</span>下相机类型选择<span class="keyword parmname">工业相机</span>，根据实际需求选择相机型号。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-2C713C48-D568-4769-AC53-4484F5E9FC37">
+                <span class="ph cmd">点击<span class="ph uicontrol">添加虚拟相机</span>，可对选择的虚拟相机型号进行添加。</span>
+                <div class="itemgroup info">添加完成的虚拟相机可在相应接口的设备列表下显示，如下图所示。<div class="fig fignone" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__FIG_SMF_C2Q_4SB">
+                        
+                        <img class="image" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_YLW_D2Q_4SB" src="GUID-4208EE2E-55C7-4FAA-8D7E-0B313F729F58-high.png" width="950" />
+                    <span class="figcap">图 2 添加虚拟相机</span></div>
+<div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-1B2DE5B5-FB40-4B6D-B21D-3F6256633878"><span class="notetitle">说明</span> 
+                        <ul class="ul" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__UL_MYN_X51_PVB">
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-9E833965-6CFA-4468-8EB6-85113EFB0974">
+                                <p class="p">若需要改变单个相机的连接状态，选择已添加的虚拟相机，右键点击<span class="ph uicontrol">变换在线模式</span>可断开已连接的相机或连接断开的相机。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-5594118F-3D2C-44BC-B7A7-0B819BF46C8C">
+                                <p class="p">若需要删除单个相机，选择已添加的虚拟相机，右键点击<span class="ph uicontrol">删除</span>可删除添加的虚拟相机。</p>
+
+                            </li>
+
+                            <li class="li" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-A80C90C4-FFDB-4C1F-ABA0-C11E630E76A9">
+                                <p class="p">若需要断开所有连接的相机，点击<span class="ph uicontrol">重置所有相机</span>可设置相机的连接状态为未连接。</p>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+</div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-217E955F-7906-40DB-B8CD-A49C0D627709">
+                <span class="ph cmd">根据添加的相机名即Vir********，在C:\Windows\Temp\VirtualCamera\Cameras路径下找到对应型号的文件夹，根据实际像素格式的使用需求，将需要使用的图片导入Mono或RGB24文件夹内，使用的图片分辨率必须与相机分辨率保持一致。</span>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-ED0F1F33-1C2E-4BF8-BD2C-C854DEC8AF1C">
+                <span class="ph cmd">在<span class="ph uicontrol">Image Format Control</span>属性下的<span class="ph uicontrol">Pixel
+                        Format</span>参数处设置与图片路径对应的像素格式，也可通过属性树进行其他参数设置操作。</span>
+                <div class="itemgroup info">
+                    <div class="note note" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CCEDA594-60A1-40D0-9FE9-473F9060302B"><span class="notetitle">说明</span> 
+                        <p class="p">若设置的像素格式与图片路径的像素格式不一致，则预览图像时图片不显示，请根据实际需求统一进行设置。</p>
+
+                    </div>
+
+                </div>
+            </li>
+<li class="li step stepexpand" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__GUID-CD162D82-7706-4162-B5B8-71478DF90681">
+                <span class="ph cmd">双击连接相机，点击<img class="image icon" id="GUID-BC64DBA7-8896-4F88-9E34-463C469F5719__IMAGE_QTV_RFQ_4SB" src="GUID-59474AEF-8205-4E4E-B5F6-A9A8C030AB35-high.png" width="31" />开始采集，可对导入的图片进行循环播放操作。</span>
+            </li>
+</ol>
+
+    </div>
+
+
+</div>
+							
+							
+							
+						</div>
+						<nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar" id="wh_side_toc" style="display:none">
+							<div class=" wh_side_toc "><ul class="hidden-print"><li><span class="topicref"><a href="GUID-1E516404-3208-47D4-8D0F-E38F54D6F03E.html">设备管理</a></span><ul class="nav nav-list"><li><span class="topicref"><a href="GUID-E0446878-1682-4778-909C-ED5D1E79EBAE.html">网口相机管理</a></span></li><li><span class="topicref"><a href="GUID-B8DE0282-164E-4705-B4C3-FE18D081E065.html#GUID-B8DE0282-164E-4705-B4C3-FE18D081E065">U3V相机管理</a></span></li><li><span class="topicref"><a href="GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA.html#GUID-B894442B-B4D6-4CC7-BCBE-3801563291DA">PCIe设备管理</a></span></li><li><span class="topicref"><a href="GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96.html#GUID-A36A6F04-79F8-49A0-8A2A-2F10DA2DAF96">串口设备管理</a></span></li><li><span class="topicref"><a href="GUID-8E28D674-7563-420B-8696-4E0EAE580BC9.html">GenTL管理</a></span></li><li><span class="topicref"><a href="GUID-BC030338-D29E-4FD5-94E5-0BFA8E3707AE.html">事件监视</a></span></li><li class="active"><span class="topicref">添加虚拟相机</span></li><li><span class="topicref"><a href="GUID-2F6759D1-004C-435B-BD43-9D485179FD1A.html">坏点校正</a></span></li></ul></li></ul></div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<!-- Latest compiled and minified JavaScript -->
+		<script type="text/javascript" src="daksys-webhelp/resources/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="daksys-webhelp/resources/js/hik_topic.js"></script>
+		<!-- <script type="text/javascript" src="${daksys-webhelp-template-dir}/resources/js/wt_default.js?buildId=${daksys-webhelp-build-number}" /> -->
+		<!-- Expand/collapse support -->
+		<script type="text/javascript" src="daksys-webhelp/template/resources/js/wt_expand.js?buildId=2017042020"></script>
+		
+		
+	</body>
+</html>

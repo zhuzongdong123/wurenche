@@ -1,0 +1,9 @@
+var keywords=[{w:"Release",p:["p0"]},{w:"Notes",p:["p0"]},{w:"Legal",p:["p1"]},{w:"Information",p:["p1"]},{w:"Configure",p:["p2"]},{w:"the",p:["p2"]},{w:"Event",p:["p2"]},{w:"Tool",p:["p3"]},{w:"Introduction",p:["p3"]},{w:"Symbol",p:["p4"]},{w:"Conventions",p:["p4"]},{w:"Get",p:["p5"]},{w:"Support",p:["p5"]},{w:"Disclaimer",p:["p6"]}];
+var ph={};
+ph["p0"]=[0, 1];
+ph["p1"]=[2, 3];
+ph["p2"]=[4, 5, 6];
+ph["p3"]=[7, 8];
+ph["p4"]=[9, 10];
+ph["p5"]=[11, 12];
+ph["p6"]=[13];

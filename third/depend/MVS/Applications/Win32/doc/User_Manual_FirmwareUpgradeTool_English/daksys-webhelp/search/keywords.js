@@ -1,0 +1,11 @@
+var keywords=[{w:"Upgrade",p:["p0","p5","p6"]},{w:"a",p:["p0","p5"]},{w:"Camera",p:["p0"]},{w:"Tool",p:["p1"]},{w:"Introduction",p:["p1"]},{w:"Legal",p:["p2"]},{w:"Information",p:["p2"]},{w:"Release",p:["p3"]},{w:"Notes",p:["p3"]},{w:"Symbol",p:["p4"]},{w:"Conventions",p:["p4"]},{w:"Frame",p:["p5"]},{w:"Grabber",p:["p5"]},{w:"Process",p:["p6"]},{w:"Get",p:["p7"]},{w:"Support",p:["p7"]},{w:"Disclaimer",p:["p8"]}];
+var ph={};
+ph["p0"]=[0, 1, 2];
+ph["p1"]=[3, 4];
+ph["p2"]=[5, 6];
+ph["p3"]=[7, 8];
+ph["p4"]=[9, 10];
+ph["p5"]=[0, 1, 11, 12];
+ph["p6"]=[0, 13];
+ph["p7"]=[14, 15];
+ph["p8"]=[16];
